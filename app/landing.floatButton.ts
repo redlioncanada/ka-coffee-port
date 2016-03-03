@@ -13,7 +13,6 @@ declare var $: JQueryStatic;
 
 export class FloatButton extends TimelineController {
     @Input() floatImage
-    @Input() floatName
     @Input() floatCopy
     @Input() floatUrl
 

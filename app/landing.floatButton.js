@@ -61,10 +61,6 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
                 __decorate([
                     core_1.Input(), 
                     __metadata('design:type', Object)
-                ], FloatButton.prototype, "floatName", void 0);
-                __decorate([
-                    core_1.Input(), 
-                    __metadata('design:type', Object)
                 ], FloatButton.prototype, "floatCopy", void 0);
                 __decorate([
                     core_1.Input(), 
