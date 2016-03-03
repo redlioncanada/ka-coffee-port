@@ -1,0 +1,127 @@
+masthead {
+	width: 100%;
+    height: 450px;
+    background-image: url("../../public/images/rl-coffee-masthead.jpg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    
+    @media screen and (max-width: 675px) {
+                height: 600px;
+                background-size: 150%;
+            }
+    
+    #rl-coffee-craft-logo{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    
+    #rl-coffee-social{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        
+        >div{
+            float: left;
+            padding: 10px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+        
+        .rl-coffee-facebook{
+            position: relative;
+            top: -3px;
+        }
+    }
+    
+    #rl-coffee-floating-nav-bar{
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        top: 175px;
+        background-color: rgba(0, 0, 0, .5);
+        
+         @media screen and (min-width: 1241px)  {
+                transform: scale(1.3);
+                -webkit-transform: scale(1.3);
+            }
+            @media screen and (max-width: 1240px) {
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+            }
+            @media screen and (max-width: 1100px) {
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+            }
+            @media screen and (max-width: 950px) {
+                transform: scale(1);
+                -webkit-transform: scale(1);
+            }
+            @media screen and (max-width: 675px) {
+                height: 400px;
+            }
+        
+        .rl-coffee-float-nav-holder{
+            max-width: 660px;
+            height: 200px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            @media screen and (max-width: 675px) {
+                max-width: 340px;
+                height: 400px;
+            }
+        }
+        
+        float-button{
+            float: left;
+            width: 315px;
+            height: 170px;
+            margin-top: 15px;
+            overflow: hidden;
+            margin-left: 7px;
+            margin-right: 7px;
+            
+            img{
+                width: 345px;
+                height: 185px;
+            }
+            
+            .rl-coffee-floatButton-copy{
+                position: relative;
+                top: -125px;
+                margin: auto;
+                left: 7px;
+                right: 0px;
+                width: 200px;
+                font-family: 'Avenir-Black', Arial, Helvetica, sans-serif;
+                font-weight: 900;
+                font-size: 20px;
+                text-transform: uppercase;
+                text-align: center;
+                color: white;
+                filter:drop-shadow(5px 5px 8x black);
+                -webkit-filter:drop-shadow(5px 5px 8px black);
+            }
+            
+            .rl-coffee-floatLearn{
+                position: relative;
+                top: -115px;
+                margin: auto;
+                left: 7px;
+                right: 0px;
+                width: 200px;
+                font-family: 'Avenir-Black', Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                font-size: 10px;
+                text-transform: uppercase;
+                text-align: center;
+                color: white;
+                filter:drop-shadow(3px 3px 5px black);
+                -webkit-filter:drop-shadow(3px 3px 5px black);
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<div class="row">
+    <div>
+        <h2 class="title">Choose your style</h2>
+    </div>
+    <product-slides [products]="products" [selectedProduct]="selectedProduct" (isAnimating)="isAnimating($event)"></product-slides>
+    <product-selector-nav [products]="products" [selectedProduct]="selectedProduct" (productSelected)="productSelected($event)"></product-selector-nav>
+</div>
