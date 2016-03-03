@@ -24,8 +24,10 @@ System.register(['angular2/core', './services/logger.service'], function(exports
             VideoPlayerVideo = (function () {
                 function VideoPlayerVideo(logger) {
                     this.logger = logger;
+                    this.stoppedEvent = new core_1.EventEmitter();
+                    this.readyEvent = new core_1.EventEmitter();
                     this.ready = false;
-                    this.selected = true;
+                    this.selected = false;
                     this.ended = false;
                 }
                 VideoPlayerVideo.prototype.ngAfterViewInit = function () {
@@ -35,19 +37,25 @@ System.register(['angular2/core', './services/logger.service'], function(exports
                             onReady: function () {
                                 self._onReady(self);
                             },
-                            onStateChanged: function (state) {
-                                switch (state) {
+                            onStateChange: function (state) {
+                                switch (state.data) {
                                     case 0:
                                         //ended
                                         self._onEnded(self);
                                         break;
                                     case 1:
-                                    //playing
+                                        //playing
+                                        break;
                                     case 2:
-                                    //paused
+                                        //paused
+                                        self._onPaused(self);
+                                        break;
                                     case 3:
-                                    //buffering
+                                        //buffering
+                                        break;
                                     case 4:
+                                        //video cued
+                                        break;
                                 }
                             }
                         }
@@ -55,9 +63,7 @@ System.register(['angular2/core', './services/logger.service'], function(exports
                 };
                 VideoPlayerVideo.prototype.ngOnChanges = function (changes) {
                     if ("selected" in changes) {
-                        console.log(changes);
                         if (changes.selected.currentValue) {
-                            //if (this.ended) {
                             this.ended = false;
                             this.restart(this);
                         }
@@ -70,9 +76,15 @@ System.register(['angular2/core', './services/logger.service'], function(exports
                 VideoPlayerVideo.prototype._onReady = function (self) {
                     //need to pass a ref of `this` since this is a callback on YT.Player
                     self.ready = true;
+                    self.readyEvent.emit();
                 };
                 VideoPlayerVideo.prototype._onEnded = function (self) {
-                    this.ended = true;
+                    self.ended = true;
+                    self.stoppedEvent.emit();
+                };
+                VideoPlayerVideo.prototype._onPaused = function (self) {
+                    self.stoppedEvent.emit();
+                    self.restart();
                 };
                 VideoPlayerVideo.prototype.play = function (self) {
                     if (!self)
@@ -115,10 +127,18 @@ System.register(['angular2/core', './services/logger.service'], function(exports
                     core_1.Input(), 
                     __metadata('design:type', Boolean)
                 ], VideoPlayerVideo.prototype, "selected", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], VideoPlayerVideo.prototype, "stoppedEvent", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], VideoPlayerVideo.prototype, "readyEvent", void 0);
                 VideoPlayerVideo = __decorate([
                     core_1.Component({
                         selector: 'videoplayer-video',
-                        templateUrl: 'app/views/landing.video-player.video.view.html'
+                        templateUrl: 'app/views/landing.videoPlayer.video.view.html'
                     }), 
                     __metadata('design:paramtypes', [logger_service_1.Logger])
                 ], VideoPlayerVideo);
@@ -128,4 +148,4 @@ System.register(['angular2/core', './services/logger.service'], function(exports
         }
     }
 });
-//# sourceMappingURL=landing.video-player.video.js.map
+//# sourceMappingURL=landing.videoPlayer.video.js.map

@@ -51,6 +51,7 @@ rl-ka-coffee {
     @import 'components/icons-row.scss';
     @import 'components/roast-row.scss';
     @import 'components/brew-method.scss';
+    @import 'components/videoplayer.scss';
 
 	width: 100%;
 	@include Avenir-Light;
@@ -58,7 +59,7 @@ rl-ka-coffee {
 	position: relative;
 	display: block;
 
-	h1,h2,h3,h4,h5,[class*='title'] {
+	h1,h2,h3,h4,h5 {
 		color: $titleColor !important;
 		cursor: default;
 		@include Avenir-Bold;

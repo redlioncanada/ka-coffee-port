@@ -1,20 +1,22 @@
-import {Component, Input} from 'angular2/core'
+import {Component, Input, Output, EventEmitter} from 'angular2/core'
 import {Logger} from './services/logger.service'
 
 @Component({
 	selector: 'videoplayer-video',
-    templateUrl: 'app/views/landing.video-player.video.view.html'
+    templateUrl: 'app/views/landing.videoPlayer.video.view.html'
 })
 export class VideoPlayerVideo {
 	@Input() id: string
 	@Input() selected: boolean
+	@Output() stoppedEvent = new EventEmitter()
+	@Output() readyEvent = new EventEmitter()
 	public player
 	public ready: boolean
 	public ended: boolean
 
 	constructor(private logger: Logger) {
 		this.ready = false
-		this.selected = true
+		this.selected = false
 		this.ended = false
 	}
 
@@ -26,20 +28,25 @@ export class VideoPlayerVideo {
 				onReady: function() {
 					self._onReady(self)
 				},
-				onStateChanged: function(state) {
-					switch(state) {
+				onStateChange: function(state) {
+					switch(state.data) {
 						case 0:
 							//ended
 							self._onEnded(self)
 							break;
 						case 1:
 							//playing
+							break;
 						case 2:
 							//paused
+							self._onPaused(self)
+							break;
 						case 3:
 							//buffering
+							break;
 						case 4:
 							//video cued
+							break;
 					}
 				}
 			}
@@ -49,14 +56,9 @@ export class VideoPlayerVideo {
 
 	ngOnChanges(changes) {
 		if ("selected" in changes) {
-            console.log(changes);
 			if (changes.selected.currentValue) {
-				//if (this.ended) {
-					this.ended = false
-					this.restart(this)
-				//} else {
-				//	this.play(this)
-				//}
+				this.ended = false
+				this.restart(this)
 			} else {
 				this.pause(this)
 				this.reset(this)
@@ -67,10 +69,17 @@ export class VideoPlayerVideo {
 	_onReady(self) {
 		//need to pass a ref of `this` since this is a callback on YT.Player
 		self.ready = true
+		self.readyEvent.emit()
 	}
 
 	_onEnded(self) {
-		this.ended = true
+		self.ended = true
+		self.stoppedEvent.emit()
+	}
+
+	_onPaused(self) {
+		self.stoppedEvent.emit()
+		self.restart()
 	}
 
 	play(self) {

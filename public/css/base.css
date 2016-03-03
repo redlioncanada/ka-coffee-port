@@ -1449,7 +1449,56 @@ rl-ka-coffee {
       padding-top: 1em;
       cursor: pointer;
       margin: auto; }
-  rl-ka-coffee h1, rl-ka-coffee h2, rl-ka-coffee h3, rl-ka-coffee h4, rl-ka-coffee h5, rl-ka-coffee [class*='title'] {
+  rl-ka-coffee videoplayer {
+    overflow: hidden; }
+    rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info {
+      position: relative;
+      z-index: 2;
+      height: inherit;
+      width: 100%;
+      color: #FFFFFF; }
+      rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info > div {
+        width: 400px;
+        margin: 0 auto;
+        display: table;
+        height: 100%; }
+      rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info > div > div {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center; }
+      rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info > * {
+        position: relative;
+        z-index: 2; }
+      rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-title, rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-desc, rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta {
+        color: #FFFFFF !important;
+        text-transform: uppercase; }
+      rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-title {
+        margin-bottom: 5px; }
+      rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-desc {
+        margin-bottom: 8px;
+        line-height: 1em;
+        font-weight: 800; }
+      rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-divider {
+        width: 90px;
+        height: 1px;
+        background-color: #FFFFFF;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+      rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta {
+        font-weight: 400; }
+      rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1; }
+  rl-ka-coffee videoplayer-video {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0; }
+  rl-ka-coffee h1, rl-ka-coffee h2, rl-ka-coffee h3, rl-ka-coffee h4, rl-ka-coffee h5 {
     color: #cc0000 !important;
     cursor: default;
     font-family: 'Avenir-Black', Helvetica, Arial, sans-serif;
