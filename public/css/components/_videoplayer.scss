@@ -54,9 +54,11 @@ videoplayer {
 
 		.rl-coffee-videoPlayer-thumb {
 			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-width: 600PX;
+            min-height: 600px;
 			z-index: 1;
 		}
 	}

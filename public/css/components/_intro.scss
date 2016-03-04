@@ -1,12 +1,19 @@
 intro {
 	cursor: default;
     overflow: hidden;
-    max-height: 500px;
+    height: 450px;
+    @media screen and (max-width: 685px) {
+            height: 900px;
+    }
     
     #rl-coffee-what-row-half{
         width: 50%;
         float: left;
         position: relative;
+        @media screen and (max-width: 685px) {
+            width: 100%;
+        }
+        
     }
     
     #rl-coffee-what-intro-copy {
@@ -22,6 +29,7 @@ intro {
     
     .rl-coffee-float-btn{
         overflow: hidden;
+        max-height:450px;
     }
     
     .rl-coffee-floatLearn{
@@ -30,6 +38,11 @@ intro {
     
     .rl-coffee-float-img{
         cursor:default;
+        
+        img{
+            min-height: 450px;
+            min-width: 600px;
+        }
     }
 
 	img {
