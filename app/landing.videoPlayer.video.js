@@ -84,7 +84,7 @@ System.register(['angular2/core', './services/logger.service'], function(exports
                 };
                 VideoPlayerVideo.prototype._onPaused = function (self) {
                     self.stoppedEvent.emit();
-                    self.restart();
+                    self.reset();
                 };
                 VideoPlayerVideo.prototype.play = function (self) {
                     if (!self)

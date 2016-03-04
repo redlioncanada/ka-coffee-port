@@ -79,7 +79,7 @@ export class VideoPlayerVideo {
 
 	_onPaused(self) {
 		self.stoppedEvent.emit()
-		self.restart()
+		self.reset()
 	}
 
 	play(self) {
