@@ -14,12 +14,13 @@ import {IconRow} from './what.icon.row';
 import {RoastRow} from './what.roast.row';
 import {BrewMethod} from './what.brew.method';
 import {VideoPlayer} from './landing.videoPlayer';
+import {GrindRow} from './what.grind';
 
 
 @Component({
     selector: 'rl-ka-coffee',
     templateUrl: 'app/views/app.view.html',
-    directives: [AppMasthead, ProductMenu, AppFooter, WhatIntro, IconRow, RoastRow, BrewMethod, VideoPlayer]
+    directives: [AppMasthead, ProductMenu, AppFooter, WhatIntro, IconRow, RoastRow, BrewMethod, VideoPlayer, GrindRow]
 })
 class AppComponent {
     

@@ -1,6 +1,6 @@
 icon-row {
 	width: 100%;
-    min-height: 325px;
+    min-height: 450px;
     background-image: url("../../public/images/whatiscraftcoffee/what-linenBackWithStain.jpg");
         background-repeat:no-repeat;
         background-size: cover;
@@ -26,10 +26,12 @@ icon-row {
     }
         
         .rl-coffee-ani-row{
-            width: 50%;
-            position:absolute;;
+               width: 50%;
+            max-width: 900px;
+            position: absolute;
             margin: auto;
-            left: 25%;
+            left: 0;
+            right: 0;
             display: inline-block;
             top: 40%;
             

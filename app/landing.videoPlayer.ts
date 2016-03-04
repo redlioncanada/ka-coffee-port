@@ -16,7 +16,7 @@ export class VideoPlayer {
 
 	public video = {
 		id: '9IFIdkLo29Y',
-		thumb: './public/images/whatiscraftcoffee/what-topBeans.jpg',
+		thumb: './public/images/rl-coffee-masthead.jpg',
 		title: 'What is craft coffee?',
 		desc: 'See the KitchenAid craft story. A collection of inspiring stories, image and people.',
 		cta: 'Watch it now'

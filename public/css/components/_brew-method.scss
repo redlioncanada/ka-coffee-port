@@ -1,6 +1,7 @@
 brew-method {
 	cursor: default;
     overflow: hidden;
+    max-height: 500px;
     
     #rl-coffee-what-row-half{
         width: 50%;
@@ -8,15 +9,26 @@ brew-method {
         position: relative;
     }
     
-    #rl-coffee-what-intro-copy {
+    .rl-coffee-floatButton-copy{
         position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        color: white;
+        top: 35%;
         text-align: center;
-        top: 0px;
-        padding: 0px;
+        padding: 60px;
+    }
+    
+    .rl-coffee-floatButton-title{
+        font-family: 'Avenir-Black',Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        position: absolute;
+        position: absolute;
+        top: 35%;
+        bottom:0;
+        left:0;
+        right:0;
+        text-align: center;
+        padding: 20px;
+        
+    
     }
     
     .rl-coffee-float-btn{
@@ -34,40 +46,4 @@ brew-method {
 	img {
 		width: 100%;
 	}
-    
-    .what-into-copy{
-        padding-left: 60px;
-        padding-right: 60px;
-        font-size: 14px;
-        line-height: 18px;
-        text-align: justify; 
-    }
-    
-    .what-intro-bean{
-        padding-top: 40px;
-        padding-bottom: 20px;
-        img {
-            width: initial;
-            padding: 20px;
-        }
-    }
-    
-    .rl-coffee-footer-seeMore {
-            position: relative;
-            top: 20px;
-            left: 0px;
-            right: 0px;
-            width: 200px;
-            height: 40px;
-            background-color: #CE0400;
-            text-align: center;
-            text-rendering: optimizeSpeed;
-            color: white;
-            text-transform: uppercase;
-            font-family: 'Avenir-Black', Arial, Helvetica, sans-serif;
-            font-size: 14px;
-            padding-top: 1em;
-            cursor: pointer;
-            margin: auto;
-        }
 }
