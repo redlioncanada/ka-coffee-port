@@ -14,8 +14,8 @@ export class VideoPlayer {
 	public selected: boolean
 	private rootElement;
 
-	public video = {
-		id: '9IFIdkLo29Y',
+	public video = { //https://www.youtube.com/watch?v=-BPDHf3YY_g
+		id: '-BPDHf3YY_g',
 		thumb: './public/images/rl-coffee-masthead.jpg',
 		title: 'What is craft coffee?',
 		desc: 'See the KitchenAid craft story. A collection of inspiring stories, images and people.',

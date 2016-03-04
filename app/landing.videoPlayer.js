@@ -32,7 +32,7 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
                 function VideoPlayer(logger, elementRef) {
                     this.logger = logger;
                     this.video = {
-                        id: '9IFIdkLo29Y',
+                        id: '-BPDHf3YY_g',
                         thumb: './public/images/rl-coffee-masthead.jpg',
                         title: 'What is craft coffee?',
                         desc: 'See the KitchenAid craft story. A collection of inspiring stories, images and people.',
