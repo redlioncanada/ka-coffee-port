@@ -35,7 +35,7 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
                         id: '9IFIdkLo29Y',
                         thumb: './public/images/rl-coffee-masthead.jpg',
                         title: 'What is craft coffee?',
-                        desc: 'See the KitchenAid craft story. A collection of inspiring stories, image and people.',
+                        desc: 'See the KitchenAid craft story. A collection of inspiring stories, images and people.',
                         cta: 'Watch it now'
                     };
                     this.selected = false;

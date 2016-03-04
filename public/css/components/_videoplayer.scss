@@ -31,12 +31,16 @@ videoplayer {
 
 		.rl-coffee-videoPlayer-title {
 			margin-bottom: 5px;
+            padding-left: 20px;
+            padding-right: 40px;
 		}
 
 		.rl-coffee-videoPlayer-desc {
-			margin-bottom: 8px;
 			line-height: 1em;
-			font-weight: 800;
+            font-weight: 800;
+            /* padding: 10px; */
+            padding-left: 20px;
+            padding-right: 40px;
 		}
 
 		.rl-coffee-videoPlayer-divider {
@@ -46,6 +50,8 @@ videoplayer {
 			margin: 0 auto;
 			margin-top: 20px;
 			margin-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 40px;
 		}
 
 		.rl-coffee-videoPlayer-cta {

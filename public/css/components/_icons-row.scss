@@ -25,6 +25,15 @@ icon-row {
             color: #352a21!important;
             font-size: 18px;
         }
+        
+        h3{
+        padding-top: 14px;
+        color: #352a21!important;
+        font-size: 14px;
+        @media screen and (max-width: 500px) {
+            font-size: 12px;
+        }
+    }
         p{
             color: #5d503a;
             font-family: Helvetica, Arial, sans-serif;
