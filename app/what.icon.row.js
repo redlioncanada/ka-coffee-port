@@ -33,14 +33,15 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
                 __extends(IconRow, _super);
                 function IconRow(elementRef) {
                     _super.call(this);
+                    this.hasPlayed = false;
                     this.elementRef = elementRef;
                     this.rootElement = $(this.elementRef.nativeElement);
                 }
                 IconRow.prototype.playAnimations = function (self) {
                     //
-                    TweenMax.to(self.targetAni01, .7, { delay: 1.5, css: { transform: "scale(1)" }, ease: Elastic.easeOut });
-                    TweenMax.to(self.targetAni02, .7, { delay: 1.8, css: { transform: "scale(1)" }, ease: Elastic.easeOut });
-                    TweenMax.to(self.targetAni03, .7, { delay: 2.1, css: { transform: "scale(1)" }, ease: Elastic.easeOut });
+                    TweenMax.to(self.targetAni01, .7, { delay: .5, css: { transform: "scale(1)" }, ease: Elastic.easeOut });
+                    TweenMax.to(self.targetAni02, .7, { delay: .8, css: { transform: "scale(1)" }, ease: Elastic.easeOut });
+                    TweenMax.to(self.targetAni03, .7, { delay: 1.1, css: { transform: "scale(1)" }, ease: Elastic.easeOut });
                 };
                 IconRow.prototype.resetAnimations = function (self) {
                     //
@@ -55,9 +56,22 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
                     this.targetAni02 = $(this.rootElement).find('.ani02');
                     this.targetAni03 = $(this.rootElement).find('.ani03');
                     //
-                    //
                     self.resetAnimations(self);
-                    self.playAnimations(self);
+                    //
+                    $(document).scroll(function () {
+                        var $window = $(window);
+                        var docViewTop = $window.scrollTop();
+                        var docViewBottom = docViewTop + $window.height();
+                        var elemTop = self.target.offset().top;
+                        var elemBottom = elemTop + self.target.height();
+                        console.log("Element top =: " + (elemBottom + -125) + " dovViewTop =: " + docViewBottom);
+                        //if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
+                        if (((elemBottom + -200) <= docViewBottom) && !self.hasPlayed) {
+                            self.hasPlayed = true;
+                            self.playAnimations(self);
+                        }
+                    });
+                    //
                 };
                 IconRow = __decorate([
                     core_1.Component({

@@ -33,18 +33,19 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
                 __extends(RoastRow, _super);
                 function RoastRow(elementRef) {
                     _super.call(this);
+                    this.hasPlayed = false;
                     this.elementRef = elementRef;
                     this.rootElement = $(this.elementRef.nativeElement);
                 }
                 RoastRow.prototype.playAnimations = function (self) {
                     //
-                    TweenMax.to(self.targetAni01, 1, { delay: 2.5, opacity: 1, x: 0, directionalRotation: "0_cw", ease: Power3.easeOut });
-                    TweenMax.to(self.targetAni02, 1, { delay: 2.8, opacity: 1, x: 0, directionalRotation: "0_cw", ease: Power3.easeOut });
-                    TweenMax.to(self.targetAni03, 1, { delay: 3.1, opacity: 1, x: 0, directionalRotation: "0_cw", ease: Power3.easeOut });
+                    TweenMax.to(self.targetAni01, 1, { delay: .5, opacity: 1, x: 0, directionalRotation: "0_cw", ease: Power3.easeOut });
+                    TweenMax.to(self.targetAni02, 1, { delay: .8, opacity: 1, x: 0, directionalRotation: "0_cw", ease: Power3.easeOut });
+                    TweenMax.to(self.targetAni03, 1, { delay: 1.1, opacity: 1, x: 0, directionalRotation: "0_cw", ease: Power3.easeOut });
                     //
-                    TweenMax.to(self.pAni01, 1, { delay: 3.5, css: { opacity: 1 }, ease: Power3.easeOut });
-                    TweenMax.to(self.pAni02, 1, { delay: 3.8, css: { opacity: 1 }, ease: Power3.easeOut });
-                    TweenMax.to(self.pAni03, 1, { delay: 4.1, css: { opacity: 1 }, ease: Power3.easeOut });
+                    TweenMax.to(self.pAni01, 1, { delay: 1.5, css: { opacity: 1 }, ease: Power3.easeOut });
+                    TweenMax.to(self.pAni02, 1, { delay: 1.8, css: { opacity: 1 }, ease: Power3.easeOut });
+                    TweenMax.to(self.pAni03, 1, { delay: 2.1, css: { opacity: 1 }, ease: Power3.easeOut });
                 };
                 RoastRow.prototype.resetAnimations = function (self) {
                     //, directionalRotation:"35_cw"
@@ -66,9 +67,21 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
                     this.pAni02 = $(this.targetAni02).find('p');
                     this.pAni03 = $(this.targetAni03).find('p');
                     //
-                    //
                     self.resetAnimations(self);
-                    setTimeout(function () { self.playAnimations(self); }, 500);
+                    //
+                    $(document).scroll(function () {
+                        var $window = $(window);
+                        var docViewTop = $window.scrollTop();
+                        var docViewBottom = docViewTop + $window.height();
+                        var elemTop = self.target.offset().top;
+                        var elemBottom = elemTop + self.target.height();
+                        if (((elemBottom + -125) <= docViewBottom) && !self.hasPlayed) {
+                            self.hasPlayed = true;
+                            self.playAnimations(self);
+                        }
+                    });
+                    //self.resetAnimations(self);
+                    //setTimeout(function(){self.playAnimations(self)}, 500);
                 };
                 RoastRow = __decorate([
                     core_1.Component({

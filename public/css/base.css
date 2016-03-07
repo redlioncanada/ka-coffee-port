@@ -446,6 +446,13 @@ rl-ka-coffee {
         padding-top: 30px;
         color: #352a21 !important;
         font-size: 18px; }
+      rl-ka-coffee products .rl-coffee-middle-header h3 {
+        padding-top: 14px;
+        color: #352a21 !important;
+        font-size: 14px; }
+        @media screen and (max-width: 500px) {
+          rl-ka-coffee products .rl-coffee-middle-header h3 {
+            font-size: 12px; } }
       rl-ka-coffee products .rl-coffee-middle-header p {
         color: #5d503a;
         font-family: Helvetica, Arial, sans-serif;
@@ -1264,7 +1271,12 @@ rl-ka-coffee {
       @media screen and (max-width: 685px) {
         rl-ka-coffee intro #rl-coffee-what-row-half {
           width: 100%; } }
+    rl-ka-coffee intro .notouch {
+      pointer-events: none; }
+      rl-ka-coffee intro .notouch .rl-coffee-float-btn {
+        pointer-events: none; }
     rl-ka-coffee intro #rl-coffee-what-intro-copy {
+      pointer-events: none;
       position: absolute;
       left: 0;
       right: 0;
@@ -1286,6 +1298,7 @@ rl-ka-coffee {
     rl-ka-coffee intro img {
       width: 100%; }
     rl-ka-coffee intro .what-into-copy {
+      pointer-events: none;
       padding-left: 60px;
       padding-right: 60px;
       padding-bottom: 20px;
@@ -1296,6 +1309,7 @@ rl-ka-coffee {
       text-align: justify;
       margin: auto; }
     rl-ka-coffee intro .what-intro-bean {
+      pointer-events: none;
       padding-top: 40px;
       padding-bottom: 20px; }
       rl-ka-coffee intro .what-intro-bean img {
@@ -1391,10 +1405,10 @@ rl-ka-coffee {
         rl-ka-coffee icon-row .rl-coffee-ani-row {
           width: 30%;
           top: 10%; } }
-      @media screen and (max-width: 100px) {
+      @media screen and (max-width: 480px) {
         rl-ka-coffee icon-row .rl-coffee-ani-row {
           width: 35%;
-          top: 10%; } }
+          top: 12%; } }
       rl-ka-coffee icon-row .rl-coffee-ani-row .aniDiv {
         width: 12%; }
         rl-ka-coffee icon-row .rl-coffee-ani-row .aniDiv p {
@@ -1571,22 +1585,37 @@ rl-ka-coffee {
         padding-left: 20px;
         padding-right: 40px; }
       rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-desc {
-        line-height: 1em;
+        line-height: 1.2em;
         font-weight: 800;
         /* padding: 10px; */
-        padding-left: 20px;
-        padding-right: 40px; }
+        padding-right: 60px;
+        padding-left: 60px; }
       rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-divider {
         width: 90px;
         height: 1px;
-        background-color: #FFFFFF;
+        background-color: transparent;
         margin: 0 auto;
         margin-top: 20px;
         margin-bottom: 20px;
         padding-left: 20px;
         padding-right: 40px; }
       rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta {
-        font-weight: 400; }
+        position: relative;
+        top: 20px;
+        left: 0px;
+        right: 0px;
+        width: 200px;
+        height: 40px;
+        background-color: #CE0400;
+        text-align: center;
+        text-rendering: optimizeSpeed;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Avenir-Black', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        padding-top: 1em;
+        cursor: pointer;
+        margin: auto; }
       rl-ka-coffee videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-thumb {
         position: absolute;
         top: 0;

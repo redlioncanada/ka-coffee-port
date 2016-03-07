@@ -15,11 +15,11 @@ declare var $: JQueryStatic;
 })
 
 export class WhatIntro extends TimelineController {
-
+    
     public images:[ProductModel] = [
        
-        new ProductModel("./public/images/whatiscraftcoffee/what-topBeans.jpg"," "," "," "," "),
-        new ProductModel("./public/images/whatiscraftcoffee/what-topBackTexture.jpg"," "," "," "," "),
+        new ProductModel("./public/images/whatiscraftcoffee/what-topBeans.jpg"," "," ","https://www.youtube.com/watch?v=-BPDHf3YY_g"," "),
+        new ProductModel("./public/images/whatiscraftcoffee/what-topBackTexture.jpg"," "," ","https://www.youtube.com/watch?v=-BPDHf3YY_g"," "),
     ];
 
     private rootElement;
@@ -48,11 +48,11 @@ export class WhatIntro extends TimelineController {
 
     private ngAfterViewInit() {
         var self=this;
-        this.target = $(this.rootElement)
+        this.target = $(this.rootElement).find('img');
         this.targetDiv = $(this.rootElement).find('.rl-coffee-footer-seeMore');
         //
         //
-        this.targetDiv.mouseover(function(){self.playAnimations(self)});
-        this.targetDiv.mouseout(function(){self.resetAnimations(self)});
+        this.target.mouseover(function(){self.playAnimations(self)});
+        this.target.mouseout(function(){self.resetAnimations(self)});
     }
 }

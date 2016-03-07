@@ -40,8 +40,8 @@ System.register(['angular2/core', './landing.timeline-controller', './landing.fl
                 function WhatIntro(elementRef) {
                     _super.call(this);
                     this.images = [
-                        new products_model_1.ProductModel("./public/images/whatiscraftcoffee/what-topBeans.jpg", " ", " ", " ", " "),
-                        new products_model_1.ProductModel("./public/images/whatiscraftcoffee/what-topBackTexture.jpg", " ", " ", " ", " "),
+                        new products_model_1.ProductModel("./public/images/whatiscraftcoffee/what-topBeans.jpg", " ", " ", "https://www.youtube.com/watch?v=-BPDHf3YY_g", " "),
+                        new products_model_1.ProductModel("./public/images/whatiscraftcoffee/what-topBackTexture.jpg", " ", " ", "https://www.youtube.com/watch?v=-BPDHf3YY_g", " "),
                     ];
                     this.elementRef = elementRef;
                     this.rootElement = $(this.elementRef.nativeElement);
@@ -56,12 +56,12 @@ System.register(['angular2/core', './landing.timeline-controller', './landing.fl
                 };
                 WhatIntro.prototype.ngAfterViewInit = function () {
                     var self = this;
-                    this.target = $(this.rootElement);
+                    this.target = $(this.rootElement).find('img');
                     this.targetDiv = $(this.rootElement).find('.rl-coffee-footer-seeMore');
                     //
                     //
-                    this.targetDiv.mouseover(function () { self.playAnimations(self); });
-                    this.targetDiv.mouseout(function () { self.resetAnimations(self); });
+                    this.target.mouseover(function () { self.playAnimations(self); });
+                    this.target.mouseout(function () { self.resetAnimations(self); });
                 };
                 WhatIntro = __decorate([
                     core_1.Component({

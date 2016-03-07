@@ -48,6 +48,7 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
                 FloatButton.prototype.ngAfterViewInit = function () {
                     var self = this;
                     this.target = $(this.rootElement);
+                    console.log(this.target);
                     this.targetImage = $(this.rootElement).find('img');
                     //
                     this.target.mouseover(function () { self.playAnimations(self); });

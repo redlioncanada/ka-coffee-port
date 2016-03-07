@@ -15,6 +15,7 @@ export class RoastRow extends TimelineController {
 
     private rootElement;
     private elementRef: ElementRef;
+    private hasPlayed;
     private target;
     private targetAni01;
     private targetAni02;
@@ -25,19 +26,20 @@ export class RoastRow extends TimelineController {
 
     public constructor(@Inject(ElementRef) elementRef: ElementRef) {
         super()
+        this.hasPlayed = false;
         this.elementRef = elementRef
         this.rootElement = $(this.elementRef.nativeElement)
     }
     
     public playAnimations(self){
         //
-        TweenMax.to(self.targetAni01, 1,  {delay: 2.5, opacity: 1, x:0, directionalRotation:"0_cw", ease:Power3.easeOut});
-        TweenMax.to(self.targetAni02, 1, {delay: 2.8, opacity: 1, x:0, directionalRotation:"0_cw", ease:Power3.easeOut});
-        TweenMax.to(self.targetAni03, 1, {delay: 3.1, opacity: 1, x:0, directionalRotation:"0_cw", ease:Power3.easeOut});
+        TweenMax.to(self.targetAni01, 1,  {delay: .5, opacity: 1, x:0, directionalRotation:"0_cw", ease:Power3.easeOut});
+        TweenMax.to(self.targetAni02, 1, {delay: .8, opacity: 1, x:0, directionalRotation:"0_cw", ease:Power3.easeOut});
+        TweenMax.to(self.targetAni03, 1, {delay: 1.1, opacity: 1, x:0, directionalRotation:"0_cw", ease:Power3.easeOut});
         //
-        TweenMax.to(self.pAni01, 1, {delay:3.5,css: {opacity: 1}, ease:Power3.easeOut});
-        TweenMax.to(self.pAni02, 1, {delay:3.8,css: {opacity: 1}, ease:Power3.easeOut});
-        TweenMax.to(self.pAni03, 1, {delay:4.1,css: {opacity: 1}, ease:Power3.easeOut});
+        TweenMax.to(self.pAni01, 1, {delay:1.5,css: {opacity: 1}, ease:Power3.easeOut});
+        TweenMax.to(self.pAni02, 1, {delay:1.8,css: {opacity: 1}, ease:Power3.easeOut});
+        TweenMax.to(self.pAni03, 1, {delay:2.1,css: {opacity: 1}, ease:Power3.easeOut});
     }
     
     public resetAnimations(self){
@@ -63,9 +65,27 @@ export class RoastRow extends TimelineController {
         this.pAni02 = $(this.targetAni02).find('p');
         this.pAni03 = $(this.targetAni03).find('p');
         //
-        //
         self.resetAnimations(self);
-        setTimeout(function(){self.playAnimations(self)}, 500);
+        //
+        $(document).scroll(function(){
+            var $window = $(window);
+
+            var docViewTop = $window.scrollTop();
+            var docViewBottom = docViewTop + $window.height();
+
+            var elemTop = self.target.offset().top;
+            var elemBottom = elemTop + self.target.height();
+            
+            
+            if (((elemBottom +-125) <= docViewBottom) && !self.hasPlayed){
+                self.hasPlayed = true;
+                self.playAnimations(self);
+            }
+            
+        });
+        
+        //self.resetAnimations(self);
+        //setTimeout(function(){self.playAnimations(self)}, 500);
         
     }
 }

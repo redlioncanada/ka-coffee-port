@@ -36,17 +36,17 @@ videoplayer {
 		}
 
 		.rl-coffee-videoPlayer-desc {
-			line-height: 1em;
+			line-height: 1.2em;
             font-weight: 800;
             /* padding: 10px; */
-            padding-left: 20px;
-            padding-right: 40px;
+            padding-right: 60px;
+            padding-left: 60px; 
 		}
 
 		.rl-coffee-videoPlayer-divider {
 			width: 90px;
 			height: 1px;
-			background-color: #FFFFFF;
+			background-color: rgba(0,0,0,0);
 			margin: 0 auto;
 			margin-top: 20px;
 			margin-bottom: 20px;
@@ -55,7 +55,22 @@ videoplayer {
 		}
 
 		.rl-coffee-videoPlayer-cta {
-			font-weight: 400;
+			position: relative;
+            top: 20px;
+            left: 0px;
+            right: 0px;
+            width: 200px;
+            height: 40px;
+            background-color: #CE0400;
+            text-align: center;
+            text-rendering: optimizeSpeed;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Avenir-Black', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            padding-top: 1em;
+            cursor: pointer;
+            margin: auto;
 		}
 
 		.rl-coffee-videoPlayer-thumb {

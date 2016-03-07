@@ -16,7 +16,16 @@ intro {
         
     }
     
+    .notouch{
+        pointer-events:none;
+        
+        .rl-coffee-float-btn{
+            pointer-events:none;
+        }
+    }
+    
     #rl-coffee-what-intro-copy {
+        pointer-events:none;
         position: absolute;
         left: 0;
         right: 0;
@@ -50,6 +59,7 @@ intro {
 	}
     
     .what-into-copy{
+        pointer-events:none;
         padding-left: 60px;
         padding-right: 60px;
         padding-bottom: 20px;
@@ -62,6 +72,7 @@ intro {
        }
     
     .what-intro-bean{
+        pointer-events:none;
         padding-top: 40px;
         padding-bottom: 20px;
         img {

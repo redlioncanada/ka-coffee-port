@@ -44,7 +44,8 @@ export class FloatButton extends TimelineController {
 
     private ngAfterViewInit() {
         var self=this;
-        this.target = $(this.rootElement)
+        this.target = $(this.rootElement);
+        console.log(this.target)
         this.targetImage = $(this.rootElement).find('img');
         //
         this.target.mouseover(function(){self.playAnimations(self)});
