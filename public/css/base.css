@@ -1468,6 +1468,9 @@ rl-ka-coffee {
           min-height: 1200px; } }
       @media screen and (max-width: 500px) {
         rl-ka-coffee roast-row #rl-coffee-what-row-full {
+          min-height: 800px; } }
+      @media screen and (max-width: 350px) {
+        rl-ka-coffee roast-row #rl-coffee-what-row-full {
           min-height: 750px; } }
     rl-ka-coffee roast-row .rl-coffee-middle-header {
       text-align: center; }

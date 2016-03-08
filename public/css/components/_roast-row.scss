@@ -12,6 +12,9 @@ roast-row {
              min-height: 1200px;
         }
         @media screen and (max-width: 500px) {
+             min-height: 800px;
+        }
+        @media screen and (max-width: 350px) {
              min-height: 750px;
         }
         
