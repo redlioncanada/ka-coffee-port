@@ -40,8 +40,8 @@ System.register(['angular2/core', './landing.timeline-controller', './landing.fl
                 function WhatIntro(elementRef) {
                     _super.call(this);
                     this.images = [
-                        new products_model_1.ProductModel("./public/images/whatiscraftcoffee/what-topBeans.jpg", " ", " ", "https://www.youtube.com/watch?v=-BPDHf3YY_g", " "),
-                        new products_model_1.ProductModel("./public/images/whatiscraftcoffee/what-topBackTexture.jpg", " ", " ", "https://www.youtube.com/watch?v=-BPDHf3YY_g", " "),
+                        new products_model_1.ProductModel("./public/images/whatiscraftcoffee/what-topBeans.jpg", " ", " ", "https://www.youtube.com/watch?v=gXm2NRiC0oY", " "),
+                        new products_model_1.ProductModel("./public/images/whatiscraftcoffee/what-topBackTexture.jpg", " ", " ", "https://www.youtube.com/watch?v=gXm2NRiC0oY", " "),
                     ];
                     this.elementRef = elementRef;
                     this.rootElement = $(this.elementRef.nativeElement);

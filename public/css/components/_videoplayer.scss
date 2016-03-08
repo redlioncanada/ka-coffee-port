@@ -9,7 +9,7 @@ videoplayer {
 		color: $videoPlayer-copyColor;
 
 		> div {
-			width: 400px;
+			max-width: 400px;
 			margin: 0 auto;
 			display: table;
 			height: 100%;
@@ -78,7 +78,7 @@ videoplayer {
             top: 0;
             left: 0;
             width: 100%;
-            min-width: 600PX;
+            min-width: 735px;
             min-height: 600px;
 			z-index: 1;
 		}

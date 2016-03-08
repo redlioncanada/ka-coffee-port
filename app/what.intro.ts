@@ -18,8 +18,8 @@ export class WhatIntro extends TimelineController {
     
     public images:[ProductModel] = [
        
-        new ProductModel("./public/images/whatiscraftcoffee/what-topBeans.jpg"," "," ","https://www.youtube.com/watch?v=-BPDHf3YY_g"," "),
-        new ProductModel("./public/images/whatiscraftcoffee/what-topBackTexture.jpg"," "," ","https://www.youtube.com/watch?v=-BPDHf3YY_g"," "),
+        new ProductModel("./public/images/whatiscraftcoffee/what-topBeans.jpg"," "," ","https://www.youtube.com/watch?v=gXm2NRiC0oY"," "),
+        new ProductModel("./public/images/whatiscraftcoffee/what-topBackTexture.jpg"," "," ","https://www.youtube.com/watch?v=gXm2NRiC0oY"," "),
     ];
 
     private rootElement;

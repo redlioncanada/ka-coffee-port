@@ -64,9 +64,9 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
                         var docViewBottom = docViewTop + $window.height();
                         var elemTop = self.target.offset().top;
                         var elemBottom = elemTop + self.target.height();
-                        console.log("Element top =: " + (elemBottom + -125) + " dovViewTop =: " + docViewBottom);
+                        //console.log("Element top =: " + (elemBottom +-125)  + " dovViewTop =: " + docViewBottom)
                         //if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)){
-                        if (((elemBottom + -200) <= docViewBottom) && !self.hasPlayed) {
+                        if (((docViewBottom - 150) >= elemTop) && !self.hasPlayed) {
                             self.hasPlayed = true;
                             self.playAnimations(self);
                         }

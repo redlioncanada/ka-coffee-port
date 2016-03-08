@@ -20,7 +20,7 @@ export class ProductMenu extends TimelineController {
        
         new ProductModel("./public/images/rl-coffee-btn-burr.jpg","Burr Grinder »","","http://kitchenaid.ca",""),
         new ProductModel("./public/images/rl-coffee-siphon.jpg","Siphon Coffee Brewer »","","http://kitchenaid.ca",""),
-        new ProductModel("./public/images/rl-coffee-btn-espresso.jpg","Esspresso »","","http://kitchenaid.ca",""),
+        new ProductModel("./public/images/rl-coffee-btn-espresso.jpg","Espresso »","","http://kitchenaid.ca",""),
         new ProductModel("./public/images/rl-coffee-btn-french.jpg","Precision Press »","","http://kitchenaid.ca",""),
         new ProductModel("./public/images/rl-coffee-btn-PO.jpg","Custom Pour Over Coffee Brewer »","","http://kitchenaid.ca","")
     ];

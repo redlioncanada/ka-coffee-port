@@ -76,10 +76,10 @@ export class RoastRow extends TimelineController {
             var elemTop = self.target.offset().top;
             var elemBottom = elemTop + self.target.height();
             
-            
-            if (((elemBottom +-125) <= docViewBottom) && !self.hasPlayed){
-                self.hasPlayed = true;
+            //console.log("DocBottom = " + docViewBottom + " Element Top = " + elemTop);
+            if (((docViewBottom - 150) >=  elemTop)&& !self.hasPlayed){
                 self.playAnimations(self);
+                self.hasPlayed = true;
             }
             
         });

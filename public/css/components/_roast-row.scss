@@ -60,6 +60,9 @@ roast-row {
             @media screen and (max-width: 100px) {
                 width: 80%;
             }
+            @media screen and (max-width: 480px) {
+                top: 18%;
+            }
             
             .aniDiv {
                 width: 33%;
