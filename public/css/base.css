@@ -442,6 +442,9 @@ rl-ka-coffee {
       background-size: 100%;
       height: 100px;
       text-align: center; }
+      @media screen and (max-width: 374px) {
+        rl-ka-coffee products .rl-coffee-middle-header {
+          height: 140px; } }
       rl-ka-coffee products .rl-coffee-middle-header h2 {
         padding-top: 20px;
         color: #352a21 !important;
@@ -556,7 +559,7 @@ rl-ka-coffee {
     @media screen and (max-width: 675px) {
       rl-ka-coffee masthead {
         height: 600px;
-        background-size: 150%; } }
+        background-size: 200%; } }
     rl-ka-coffee masthead #rl-coffee-craft-logo {
       position: absolute;
       top: 20px;
