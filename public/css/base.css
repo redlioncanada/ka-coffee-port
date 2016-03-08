@@ -443,9 +443,16 @@ rl-ka-coffee {
       height: 100px;
       text-align: center; }
       rl-ka-coffee products .rl-coffee-middle-header h2 {
-        padding-top: 30px;
+        padding-top: 20px;
         color: #352a21 !important;
         font-size: 18px; }
+      rl-ka-coffee products .rl-coffee-middle-header h3 {
+        padding-top: 10px;
+        color: #352a21 !important;
+        font-size: 14px; }
+        @media screen and (max-width: 500px) {
+          rl-ka-coffee products .rl-coffee-middle-header h3 {
+            font-size: 12px; } }
       rl-ka-coffee products .rl-coffee-middle-header p {
         color: #5d503a;
         font-family: Helvetica, Arial, sans-serif;
@@ -462,7 +469,10 @@ rl-ka-coffee {
       width: 20%;
       max-height: 250px;
       overflow: hidden; }
-      @media screen and (min-width: 1651px) {
+      @media screen and (min-width: 2000px) {
+        rl-ka-coffee products float-button {
+          max-height: 600px; } }
+      @media screen and (max-width: 1999px) {
         rl-ka-coffee products float-button {
           max-height: 300px; } }
       @media screen and (max-width: 1650px) {
@@ -531,6 +541,10 @@ rl-ka-coffee {
         @media screen and (max-width: 500px) {
           rl-ka-coffee products float-button .rl-coffee-floatButton-copy {
             font-size: 14px; } }
+        @media screen and (max-width: 374px) {
+          rl-ka-coffee products float-button .rl-coffee-floatButton-copy {
+            top: -9em;
+            font-size: 12px; } }
       rl-ka-coffee products float-button .rl-coffee-floatLearn {
         display: none; }
   rl-ka-coffee masthead {
@@ -1117,6 +1131,9 @@ rl-ka-coffee {
     @media screen and (min-width: 1651px) {
       rl-ka-coffee footer {
         top: 150px; } }
+    @media screen and (min-width: 2000px) {
+      rl-ka-coffee footer {
+        top: 250px; } }
     rl-ka-coffee footer #rl-coffee-legal {
       width: 100%;
       height: 50px; }

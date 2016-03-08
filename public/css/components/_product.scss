@@ -11,10 +11,19 @@ products {
         text-align: center;
         
         h2{
-            padding-top: 30px;
+            padding-top: 20px;
             color: #352a21!important;
             font-size: 18px;
         }
+        h3{
+            padding-top: 10px;
+            color: #352a21!important;
+            font-size: 14px;
+            @media screen and (max-width: 500px) {
+                font-size: 12px;
+            }
+        }
+        
         p{
             color: #5d503a;
             font-family: Helvetica, Arial, sans-serif;
@@ -39,7 +48,10 @@ products {
             width: 20%;
             max-height: 250px;
             overflow: hidden;
-            @media screen and (min-width: 1651px) {
+            @media screen and (min-width: 2000px) {
+                max-height: 600px;
+            }
+            @media screen and (max-width: 1999px) {
                 max-height: 300px;
             }
              @media screen and (max-width: 1650px) {
@@ -111,6 +123,10 @@ products {
                 }
                 @media screen and (max-width: 500px) {
                     font-size: 14px;
+                }
+                @media screen and (max-width: 374px) {
+                    top: -9em;
+                    font-size: 12px;
                 }
             }
             
