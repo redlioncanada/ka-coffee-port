@@ -38,12 +38,11 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
                 }
                 FloatButton.prototype.playAnimations = function (self) {
                     //
-                    console.log(self.targetImage);
                     TweenMax.to(self.targetImage, 1, { css: { transform: "scale(1.25)" }, ease: Power3.easeOut });
                 };
                 FloatButton.prototype.resetAnimations = function (self) {
                     //
-                    TweenMax.to(self.targetImage, .5, { css: { transform: "scale(1.05)" }, ease: Power3.easeOut });
+                    TweenMax.to(self.targetImage, .5, { css: { transform: "scale(1.00)" }, ease: Power3.easeOut });
                 };
                 FloatButton.prototype.ngAfterViewInit = function () {
                     var self = this;

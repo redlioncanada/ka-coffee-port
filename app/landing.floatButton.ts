@@ -30,13 +30,12 @@ export class FloatButton extends TimelineController {
     
     public playAnimations(self){
         //
-        console.log(self.targetImage);
         TweenMax.to(self.targetImage, 1, {css: {transform:"scale(1.25)"}, ease:Power3.easeOut});
     }
     
     public resetAnimations(self){
         //
-        TweenMax.to(self.targetImage, .5, {css: {transform:"scale(1.05)"}, ease:Power3.easeOut});
+        TweenMax.to(self.targetImage, .5, {css: {transform:"scale(1.00)"}, ease:Power3.easeOut});
     }
     
    

@@ -483,6 +483,9 @@ rl-ka-coffee {
           max-height: 275px; } }
       @media screen and (max-width: 1500px) {
         rl-ka-coffee products float-button {
+          max-height: 265px; } }
+      @media screen and (max-width: 1400px) {
+        rl-ka-coffee products float-button {
           max-height: 250px; } }
       @media screen and (max-width: 1240px) {
         rl-ka-coffee products float-button {
@@ -623,7 +626,9 @@ rl-ka-coffee {
         margin-right: 7px; }
         rl-ka-coffee masthead #rl-coffee-floating-nav-bar float-button img {
           width: 345px;
-          height: 185px; }
+          height: 185px;
+          position: relative;
+          top: -10px; }
         rl-ka-coffee masthead #rl-coffee-floating-nav-bar float-button .rl-coffee-floatButton-copy {
           position: relative;
           top: -125px;
