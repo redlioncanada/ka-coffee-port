@@ -1,0 +1,60 @@
+brew-method {
+	cursor: default;
+    overflow: hidden;
+    height: 450px;
+    @media screen and (max-width: 685px) {
+            height: 900px;
+    }
+    
+    #rl-coffee-what-row-half{
+        width: 50%;
+        float: left;
+        position: relative;
+        @media screen and (max-width: 685px) {
+            width: 100%;
+        }
+    }
+    
+    .rl-coffee-floatButton-copy{
+        position: absolute;
+        top: 35%;
+        text-align: center;
+        padding: 60px;
+    }
+    
+    .rl-coffee-floatButton-title{
+        font-family: 'Avenir-Black',Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        position: absolute;
+        position: absolute;
+        top: 35%;
+        bottom:0;
+        left:0;
+        right:0;
+        text-align: center;
+        padding: 20px;
+        
+    
+    }
+    
+    .rl-coffee-float-btn{
+        overflow: hidden;
+    }
+    
+    .rl-coffee-floatLearn{
+        display: none;
+    }
+    
+    .rl-coffee-float-img{
+        cursor:default;
+        
+        img{
+            min-height: 450px;
+            min-width: 600px;
+        }
+    }
+
+	img {
+		width: 100%;
+	}
+}

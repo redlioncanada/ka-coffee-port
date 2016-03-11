@@ -1,0 +1,108 @@
+intro {
+	cursor: default;
+    overflow: hidden;
+    height: 450px;
+    @media screen and (max-width: 685px) {
+            height: 900px;
+    }
+    
+    #rl-coffee-what-row-half{
+        width: 50%;
+        float: left;
+        position: relative;
+        @media screen and (max-width: 685px) {
+            width: 100%;
+        }
+        
+    }
+    
+    .notouch{
+        pointer-events:none;
+        
+        .rl-coffee-float-btn{
+            pointer-events:none;
+        }
+    }
+    
+    #rl-coffee-what-intro-copy {
+        pointer-events:none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: white;
+        text-align: center;
+        top: 0px;
+        padding: 0px;
+    }
+    
+    .rl-coffee-float-btn{
+        overflow: hidden;
+        max-height:450px;
+    }
+    
+    .rl-coffee-floatLearn{
+        display: none;
+    }
+    
+    .rl-coffee-float-img{
+        cursor:default;
+        
+        img{
+            min-height: 450px;
+            min-width: 600px;
+        }
+    }
+
+	img {
+		width: 100%;
+	}
+    
+    .what-into-copy{
+        pointer-events:none;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 20px;
+        max-width: 400px;
+        position: relative;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: justify;
+        margin: auto;
+        
+        @media screen and (max-width: 374px) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        
+       }
+    
+    .what-intro-bean{
+        pointer-events:none;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        img {
+            width: initial;
+            padding: 20px;
+        }
+    }
+    
+    .rl-coffee-footer-seeMore {
+            position: relative;
+            top: 20px;
+            left: 0px;
+            right: 0px;
+            width: 200px;
+            height: 40px;
+            background-color: #CE0400;
+            text-align: center;
+            text-rendering: optimizeSpeed;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Avenir-Black', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            padding-top: 1em;
+            cursor: pointer;
+            margin: auto;
+        }
+}

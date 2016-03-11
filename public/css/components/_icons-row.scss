@@ -1,0 +1,144 @@
+icon-row {
+	width: 100%;
+    min-height: 450px;
+    background-image: url("../../public/images/whatiscraftcoffee/what-linenBackWithStain.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+    
+    #rl-coffee-what-row-full{
+        min-height:  inherit;
+        @media screen and (max-width: 820px) {
+                height: 1000px;
+        }
+        
+        @media screen and (max-width: 480px) {
+            height: 850px;
+        }
+    }
+    
+    .rl-coffee-middle-header{
+        
+        text-align: center;
+        
+        h2{
+            padding-top: 30px;
+            color: #352a21!important;
+            font-size: 18px;
+        }
+        
+        h3{
+        padding-top: 14px;
+        color: #352a21!important;
+        font-size: 14px;
+        @media screen and (max-width: 500px) {
+            font-size: 12px;
+        }
+    }
+        p{
+            color: #5d503a;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 13px;
+        }
+    }
+    
+    /*.rl-coffee-ani-row{
+            width: 80%;
+            max-width: 1200px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            display: inline-block;
+            @media screen and (max-width: 820px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 650px) {
+                width: 65%;
+            }
+            @media screen and (max-width: 100px) {
+                width: 80%;
+            }
+            
+            .aniDiv {
+                width: 33%;
+                @media screen and (max-width: 820px) {
+                    width: 100%;
+                }
+                
+            }  */
+        
+        .rl-coffee-ani-row{
+               width: 50%;
+            max-width: 900px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            display: inline-block;
+            top: 40%;
+            
+            @media screen and (max-width: 820px) {
+                width: 25%;
+                top: 10%;
+            }
+            @media screen and (max-width: 650px) {
+                width: 30%;
+                top: 10%;
+            }
+            @media screen and (max-width: 480px) {
+                width: 35%;
+                top: 18%;
+            }
+            
+            .aniDiv {
+                width: 15%;
+                p{
+                    font-family: 'Avenir-Black', Arial, Helvetica, sans-serif;
+                    color: #352a21;
+                    text-align: center;
+                    font-weight: 900;
+                    padding-top: 5px;
+                }
+                @media screen and (max-width: 820px) {
+                    padding: 20px;
+                    width: 100%;
+                }
+            }
+            
+            .ruleDiv{
+                width: 25%;
+                @media screen and (max-width: 820px) {
+                    width: 100%;
+                    padding-bottom: 50px;
+                }
+                >img {
+                    top: 1em;
+                }
+            }
+            
+            >div {
+                float: left;
+            }
+            
+            img{
+                width: 80%;
+                margin: auto;
+                position: relative;
+                left: 10%;
+                
+                
+            }
+            
+            /*.aniDiv:nth-child(1) img {
+                    top:.5em;
+                    padding-bottom: 20px;
+            }
+            
+            .aniDiv:nth-child(3) img {
+                    top:-1em;
+                }*/
+            .aniDiv img {
+                    top:-1em;
+                }
+        }
+    }
