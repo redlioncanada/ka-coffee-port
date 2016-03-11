@@ -7,6 +7,9 @@ products {
         background-repeat:no-repeat;
         background-size: 100%;
         height: 100px;
+        @media screen and (max-width: 374px) {
+            height: 140px;
+        }
         
         text-align: center;
         
@@ -58,8 +61,13 @@ products {
                 max-height: 275px;
             }
              @media screen and (max-width: 1500px) {
+                max-height: 265px;
+            }
+            
+            @media screen and (max-width: 1400px) {
                 max-height: 250px;
             }
+            
             @media screen and (max-width: 1240px) {
                 max-height: 225px;
             }

@@ -442,6 +442,9 @@ rl-ka-coffee {
       background-size: 100%;
       height: 100px;
       text-align: center; }
+      @media screen and (max-width: 374px) {
+        rl-ka-coffee products .rl-coffee-middle-header {
+          height: 140px; } }
       rl-ka-coffee products .rl-coffee-middle-header h2 {
         padding-top: 20px;
         color: #352a21 !important;
@@ -479,6 +482,9 @@ rl-ka-coffee {
         rl-ka-coffee products float-button {
           max-height: 275px; } }
       @media screen and (max-width: 1500px) {
+        rl-ka-coffee products float-button {
+          max-height: 265px; } }
+      @media screen and (max-width: 1400px) {
         rl-ka-coffee products float-button {
           max-height: 250px; } }
       @media screen and (max-width: 1240px) {
