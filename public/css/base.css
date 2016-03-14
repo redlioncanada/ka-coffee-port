@@ -579,6 +579,10 @@ rl-ka-coffee {
       rl-ka-coffee masthead #rl-coffee-social .rl-coffee-facebook {
         position: relative;
         top: -3px; }
+      rl-ka-coffee masthead #rl-coffee-social .rl-coffee-insta img {
+        width: 15px;
+        position: relative;
+        top: -3px; }
     rl-ka-coffee masthead #rl-coffee-floating-nav-bar {
       position: absolute;
       width: 100%;
