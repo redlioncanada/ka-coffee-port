@@ -12,7 +12,7 @@ import {AppFooter} from './coffee.footer'
 
 
 @Component({
-    selector: 'rl-ka-coffee',
+    selector: 'ka-coffee-port',
     templateUrl: 'app/views/app.view.html',
     directives: [AppMasthead, ProductMenu, AppFooter]
 })
