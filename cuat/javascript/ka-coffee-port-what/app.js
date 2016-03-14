@@ -1,4 +1,4 @@
-System.register(['angular2/platform/browser', 'angular2/http', './services/logger.service', './services/googleapi.service', 'angular2/core', './landing.masthead', './landing.prodMenu', './coffee.footer', './what.intro', './what.icon.row', './what.roast.row', './what.brew.method', './landing.videoPlayer', './what.grind'], function(exports_1, context_1) {
+System.register(['angular2/platform/browser', 'angular2/http', './services/logger.service.js', './services/googleapi.service.js', 'angular2/core', './landing.masthead.js', './landing.prodMenu.js', './coffee.footer.js', './what.intro.js', './what.icon.row.js', './what.roast.row.js', './what.brew.method.js', './landing.videoPlayer.js', './what.grind.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -63,7 +63,7 @@ System.register(['angular2/platform/browser', 'angular2/http', './services/logge
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'ka-coffee-port-what',
-                        templateUrl: 'app/views/app.view.html',
+                        templateUrl: '/javascript/ka-coffee-port-what/views/app.view.html',
                         directives: [landing_masthead_1.AppMasthead, landing_prodMenu_1.ProductMenu, coffee_footer_1.AppFooter, what_intro_1.WhatIntro, what_icon_row_1.IconRow, what_roast_row_1.RoastRow, what_brew_method_1.BrewMethod, landing_videoPlayer_1.VideoPlayer, what_grind_1.GrindRow]
                     }), 
                     __metadata('design:paramtypes', [])

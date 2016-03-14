@@ -17,7 +17,9 @@ gulp.task('sass:watch', function () {
 
 gulp.task('cuat', function() {
 	var base = config.name;
-	var nodeModulesUrl = 'http://wpc-stage.com/production/kitchenaid/refer-landing'
+		var brand = config.brand;
+	var nodeModulesUrl = 'http://wpc-stage.com/production/'+brand+'/'+base
+
 
 	gulp.src('./app/**/*.+(js|html)')
 		.pipe(replace('app/', '/javascript/'+base+'/'))

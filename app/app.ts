@@ -18,7 +18,7 @@ import {GrindRow} from './what.grind';
 
 
 @Component({
-    selector: 'rl-ka-coffee',
+	selector: 'ka-coffee-port-what',
     templateUrl: 'app/views/app.view.html',
     directives: [AppMasthead, ProductMenu, AppFooter, WhatIntro, IconRow, RoastRow, BrewMethod, VideoPlayer, GrindRow]
 })

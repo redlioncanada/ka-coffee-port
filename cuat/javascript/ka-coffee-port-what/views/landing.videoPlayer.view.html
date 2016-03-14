@@ -1,0 +1,10 @@
+<div class="rl-coffee-videoPlayer-info" (click)="select()">
+	<div><div>
+		<h2 class="rl-coffee-videoPlayer-title">{{video.title}}</h2>
+		<p class="rl-coffee-videoPlayer-desc">{{video.desc}}</p>
+		<div class="rl-coffee-videoPlayer-divider"></div>
+		<div class="rl-coffee-videoPlayer-cta">{{video.cta}}</div>
+	</div></div>
+	<img class="rl-coffee-videoPlayer-thumb" src="{{video.thumb}}"/>
+</div>
+<videoplayer-video [id]="video.id" [selected]="selected" (stoppedEvent)="stoppedEvent($event)"></videoplayer-video>
