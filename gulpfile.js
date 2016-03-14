@@ -25,7 +25,6 @@ gulp.task('cuat', function() {
 		.pipe(replace('app/', '/javascript/'+base+'/'))
 		.pipe(replace('./public/images', '/images/'+base))
 		.pipe(replace('<header></header>', ''))
-		.pipe(replace('<footer></footer>', ''))
 		.pipe(replace(/'\.\/([^']*)'/g, '\'./$1.js\''))
 		.pipe(gulp.dest('./cuat/javascript/'+base+'/'))
 

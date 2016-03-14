@@ -22,7 +22,7 @@ html, body {
   font-weight: normal;
   font-style: normal; }
 
-#container {
+#container, #page {
   width: 100%; }
 
 ka-coffee-port-what {
@@ -1581,7 +1581,8 @@ ka-coffee-port-what {
     ka-coffee-port-what brew-method img {
       width: 100%; }
   ka-coffee-port-what videoplayer {
-    overflow: hidden; }
+    overflow: hidden;
+    margin-top: 117px !important; }
     ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info {
       position: relative;
       z-index: 2;
