@@ -1,4 +1,4 @@
-System.register(['angular2/core', './landing.timeline-controller.js', './landing.floatButton.js', './models/products.model.js'], function(exports_1, context_1) {
+System.register(['angular2/core', './landing.timeline-controller.js', './landing.floatButton.js', './landing.videoPlayer-side.js', './models/products.model.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -18,7 +18,7 @@ System.register(['angular2/core', './landing.timeline-controller.js', './landing
     var __param = (this && this.__param) || function (paramIndex, decorator) {
         return function (target, key) { decorator(target, key, paramIndex); }
     };
-    var core_1, landing_timeline_controller_1, landing_floatButton_1, products_model_1;
+    var core_1, landing_timeline_controller_1, landing_floatButton_1, landing_videoPlayer_side_1, products_model_1;
     var WhatIntro;
     return {
         setters:[
@@ -30,6 +30,9 @@ System.register(['angular2/core', './landing.timeline-controller.js', './landing
             },
             function (landing_floatButton_1_1) {
                 landing_floatButton_1 = landing_floatButton_1_1;
+            },
+            function (landing_videoPlayer_side_1_1) {
+                landing_videoPlayer_side_1 = landing_videoPlayer_side_1_1;
             },
             function (products_model_1_1) {
                 products_model_1 = products_model_1_1;
@@ -67,7 +70,7 @@ System.register(['angular2/core', './landing.timeline-controller.js', './landing
                     core_1.Component({
                         selector: 'intro',
                         templateUrl: '/javascript/ka-coffee-port-what/views/what.intro.view.html',
-                        directives: [landing_floatButton_1.FloatButton]
+                        directives: [landing_floatButton_1.FloatButton, landing_videoPlayer_side_1.VideoPlayerSide]
                     }),
                     __param(0, core_1.Inject(core_1.ElementRef)), 
                     __metadata('design:paramtypes', [core_1.ElementRef])
