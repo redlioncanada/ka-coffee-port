@@ -559,7 +559,8 @@ ka-coffee-port {
     height: 450px;
     background-image: url("../../public/images/rl-coffee-masthead.jpg");
     background-repeat: no-repeat;
-    background-size: 100%; }
+    background-size: 100%;
+    overflow: hidden; }
     @media screen and (max-width: 675px) {
       ka-coffee-port masthead {
         height: 600px;
