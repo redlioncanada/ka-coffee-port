@@ -47,16 +47,20 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
                 VideoPlayerSide.prototype.select = function () {
                     this.selected = true;
                     var infoElement = $(this.rootElement).find('.rl-coffee-videoPlayer-info');
+                    var videoElement = $(this.rootElement).find('videoplayer-video');
                     infoElement.animate({
                         opacity: 0
                     }, 1000, function () {
-                        infoElement.css('display', 'none');
+                        videoElement.css('zIndex', 2);
+                        infoElement.css('zIndex', 1);
                     });
                 };
                 VideoPlayerSide.prototype.stoppedEvent = function () {
                     this.selected = false;
                     var infoElement = $(this.rootElement).find('.rl-coffee-videoPlayer-info');
-                    infoElement.css('display', 'block').animate({
+                    var videoElement = $(this.rootElement).find('videoplayer-video');
+                    videoElement.css('zIndex', 1);
+                    infoElement.css('zIndex', 2).animate({
                         opacity: 1
                     }, 1000);
                 };

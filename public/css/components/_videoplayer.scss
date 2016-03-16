@@ -37,8 +37,8 @@ videoplayer,videoplayer-side {
 		}
 
 		.rl-coffee-videoPlayer-header {
-			width: 40%;
-			margin-bottom: 20px;
+			width: 30%;
+			margin-bottom: 40px;
 		}
 
 		.rl-coffee-videoPlayer-desc {
@@ -94,8 +94,27 @@ videoplayer,videoplayer-side {
 }
 
 videoplayer-side {
-	.rl-coffee-videoPlayer-desc {
-		font-size: 0.9em;
+	p.rl-coffee-videoPlayer-desc {
+		padding: 0 60px 20px 60px;
+		max-width: 400px;
+		font-size: 14px;
+		line-height: 18px !important;
+		text-transform: initial !important;
+		text-align: justify;
+	}
+
+	.rl-coffee-videoPlayer-divider {
+		display: none;
+	}
+
+	.rl-coffee-videoPlayer-thumb {
+		@include transitionEaseInOut(0.5s);
+	}
+}
+
+videoplayer-side:hover {
+	.rl-coffee-videoPlayer-thumb {
+		@include grow(1.3);
 	}
 }
 

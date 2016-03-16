@@ -35,10 +35,12 @@ export class VideoPlayerSide {
 		this.selected = true
 
 		let infoElement = $(this.rootElement).find('.rl-coffee-videoPlayer-info')
+		let videoElement = $(this.rootElement).find('videoplayer-video')
 		infoElement.animate({
 			opacity: 0
 		}, 1000, function() {
-			infoElement.css('display', 'none')
+			videoElement.css('zIndex',2)
+			infoElement.css('zIndex',1)
 		})
 	}
 
@@ -46,7 +48,10 @@ export class VideoPlayerSide {
 		this.selected = false
 		
 		let infoElement = $(this.rootElement).find('.rl-coffee-videoPlayer-info')
-		infoElement.css('display', 'block').animate({
+		let videoElement = $(this.rootElement).find('videoplayer-video')
+
+		videoElement.css('zIndex',1)
+		infoElement.css('zIndex',2).animate({
 			opacity: 1
 		}, 1000)
 	}

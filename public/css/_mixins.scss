@@ -32,6 +32,13 @@
     transition: all $time ease;
 }
 
+@mixin transitionEaseInOut($time) {
+	-webkit-transition: all $time ease-in-out;
+    -moz-transition: all $time ease-in-out;
+    -o-transition: all $time ease-in-out;
+    transition: all $time ease-in-out;
+}
+
 @mixin transition-reset() {
 	-webkit-transition: initial;
     -moz-transition: initial;
