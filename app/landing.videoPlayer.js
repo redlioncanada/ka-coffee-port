@@ -47,9 +47,9 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
                     this.video = {
                         id: '-BPDHf3YY_g',
                         thumb: './public/images/rl-coffee-masthead.jpg',
-                        title: 'What is craft coffee?',
-                        desc: 'See the KitchenAid craft story. A collection of inspiring stories, images and people.',
-                        cta: 'Watch it now'
+                        title: "QU'EST CE QUE LE CAFÉ ARTISANAL?",
+                        desc: "DÉCOUVREZ L'HISTOIRE DU CAFÉ ARTISANAL DE KITCHENAID, UNE COLLECTION D'HISTOIRES, D’IMAGES ET DE PERSONNAGES CAPTIVANTS",
+                        cta: "REGARDEZ LA VIDÉO"
                     };
                     this.selected = false;
                     this.rootElement = $(elementRef.nativeElement);
