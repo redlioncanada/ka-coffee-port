@@ -18,11 +18,11 @@ export class ProductMenu extends TimelineController {
 
     public products:[ProductModel] = [
        
-        new ProductModel("./public/images/rl-coffee-btn-burr.jpg","Burr Grinder »","","http://kitchenaid.ca",""),
-        new ProductModel("./public/images/rl-coffee-siphon.jpg","Siphon Coffee Brewer »","","http://kitchenaid.ca",""),
-        new ProductModel("./public/images/rl-coffee-btn-espresso.jpg","Espresso »","","http://kitchenaid.ca",""),
-        new ProductModel("./public/images/rl-coffee-btn-french.jpg","Precision Press »","","http://kitchenaid.ca",""),
-        new ProductModel("./public/images/rl-coffee-btn-PO.jpg","Custom Pour Over Coffee Brewer »","","http://kitchenaid.ca","")
+        new ProductModel("./public/images/rl-coffee-btn-burr.jpg","Burr Grinder »","","http://cuat.kitchenaid.ca/en_CA/2_1_2_3_3442/brand_small-appliances_coffee-products_burr-grinder.content.html?skipCache=true",""),
+        new ProductModel("./public/images/rl-coffee-siphon.jpg","Siphon Coffee Brewer »","","http://cuat.kitchenaid.ca/en_CA/2_1_2_3_3450/brand_small-appliances_coffee-products_siphonbrew.content.html?skipCache=true",""),
+        new ProductModel("./public/images/rl-coffee-btn-espresso.jpg","Espresso »","","http://cuat.kitchenaid.ca/en_CA/2_1_2_3_3445/brand_small-appliances_coffee-products_espresso-coffee.content.html",""),
+        new ProductModel("./public/images/rl-coffee-btn-french.jpg","Precision Press »","","http://cuat.kitchenaid.ca/en_CA/2_1_2_3_3448/brand_small-appliances_coffee-products_precision-press.content.html?skipCache=true",""),
+        new ProductModel("./public/images/rl-coffee-btn-PO.jpg","Custom Pour Over Coffee Brewer »","","http://cuat.kitchenaid.ca/en_CA/2_1_2_3_3447/brand_small-appliances_coffee-products_pour-over-coffee.content.html?skipCache=true","")
     ];
 
     private rootElement;
