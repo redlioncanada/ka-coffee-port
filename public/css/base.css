@@ -1580,41 +1580,44 @@ ka-coffee-port-what {
         min-width: 600px; }
     ka-coffee-port-what brew-method img {
       width: 100%; }
-  ka-coffee-port-what videoplayer {
+  ka-coffee-port-what videoplayer, ka-coffee-port-what videoplayer-side {
     overflow: hidden;
     margin-top: 117px !important; }
-    ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info {
+    ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info {
       position: relative;
       z-index: 2;
       height: inherit;
       width: 100%;
       color: #FFFFFF; }
-      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info > div {
+      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info > div, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info > div {
         max-width: 400px;
         margin: 0 auto;
         display: table;
         height: 100%; }
-      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info > div > div {
+      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info > div > div, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info > div > div {
         display: table-cell;
         vertical-align: middle;
         text-align: center; }
-      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info > * {
+      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info > *, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info > * {
         position: relative;
         z-index: 2; }
-      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-title, ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-desc, ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta {
+      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-title, ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-desc, ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-title, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-desc, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta {
         color: #FFFFFF !important;
         text-transform: uppercase; }
-      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-title {
+      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-title, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-title {
         margin-bottom: 5px;
         padding-left: 20px;
         padding-right: 40px; }
-      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-desc {
+      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-header, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-header {
+        width: 40%;
+        margin-bottom: 20px; }
+      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-desc, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-desc {
         line-height: 1.2em;
         font-weight: 800;
         /* padding: 10px; */
         padding-right: 60px;
         padding-left: 60px; }
-      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-divider {
+      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-divider, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-divider {
         width: 90px;
         height: 1px;
         background-color: transparent;
@@ -1623,7 +1626,7 @@ ka-coffee-port-what {
         margin-bottom: 20px;
         padding-left: 20px;
         padding-right: 40px; }
-      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta {
+      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta {
         position: relative;
         top: 20px;
         left: 0px;
@@ -1640,7 +1643,7 @@ ka-coffee-port-what {
         padding-top: 1em;
         cursor: pointer;
         margin: auto; }
-      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-thumb {
+      ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-thumb, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-thumb {
         position: absolute;
         top: 0;
         left: 0;
@@ -1648,6 +1651,8 @@ ka-coffee-port-what {
         min-width: 735px;
         min-height: 600px;
         z-index: 1; }
+  ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-desc {
+    font-size: 0.9em; }
   ka-coffee-port-what videoplayer-video {
     width: 100%;
     z-index: 1;

@@ -1,4 +1,4 @@
-videoplayer {
+videoplayer,videoplayer-side {
 	overflow: hidden;
 	margin-top: 117px !important;
 
@@ -34,6 +34,11 @@ videoplayer {
 			margin-bottom: 5px;
             padding-left: 20px;
             padding-right: 40px;
+		}
+
+		.rl-coffee-videoPlayer-header {
+			width: 40%;
+			margin-bottom: 20px;
 		}
 
 		.rl-coffee-videoPlayer-desc {
@@ -86,6 +91,12 @@ videoplayer {
 	}
 
 
+}
+
+videoplayer-side {
+	.rl-coffee-videoPlayer-desc {
+		font-size: 0.9em;
+	}
 }
 
 videoplayer-video {

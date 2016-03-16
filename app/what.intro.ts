@@ -4,6 +4,7 @@ import {bootstrap}    from 'angular2/platform/browser'
 import {Component, Input, Inject, ElementRef} from 'angular2/core'
 import {TimelineController} from './landing.timeline-controller'
 import {FloatButton} from './landing.floatButton'
+import {VideoPlayerSide} from './landing.videoPlayer-side'
 import {ProductModel} from './models/products.model'
 
 declare var $: JQueryStatic;
@@ -11,7 +12,7 @@ declare var $: JQueryStatic;
 @Component({
     selector: 'intro',
     templateUrl: 'app/views/what.intro.view.html',
-    directives:[FloatButton]
+    directives:[FloatButton,VideoPlayerSide]
 })
 
 export class WhatIntro extends TimelineController {

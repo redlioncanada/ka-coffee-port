@@ -14,13 +14,14 @@ import {IconRow} from './what.icon.row';
 import {RoastRow} from './what.roast.row';
 import {BrewMethod} from './what.brew.method';
 import {VideoPlayer} from './landing.videoPlayer';
+import {VideoPlayerSide} from './landing.videoPlayer-side';
 import {GrindRow} from './what.grind';
 
 
 @Component({
 	selector: 'ka-coffee-port-what',
     templateUrl: 'app/views/app.view.html',
-    directives: [AppMasthead, ProductMenu, AppFooter, WhatIntro, IconRow, RoastRow, BrewMethod, VideoPlayer, GrindRow]
+    directives: [AppMasthead, ProductMenu, AppFooter, WhatIntro, IconRow, RoastRow, BrewMethod, VideoPlayer, VideoPlayerSide, GrindRow]
 })
 class AppComponent {
     
