@@ -32,13 +32,12 @@ System.register(['angular2/core', './landing.timeline-controller.js'], function(
             FloatButton = (function (_super) {
                 __extends(FloatButton, _super);
                 function FloatButton(elementRef) {
+                    _super.call(this);
                     this.elementRef = elementRef;
                     this.rootElement = $(this.elementRef.nativeElement);
-                    _super.call(this);
                 }
                 FloatButton.prototype.playAnimations = function (self) {
                     //
-                    console.log(self.targetImage);
                     TweenMax.to(self.targetImage, 1, { css: { transform: "scale(1.25)" }, ease: Power3.easeOut });
                 };
                 FloatButton.prototype.resetAnimations = function (self) {

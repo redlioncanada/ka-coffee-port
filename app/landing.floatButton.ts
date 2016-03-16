@@ -23,15 +23,15 @@ export class FloatButton extends TimelineController {
     private targetImage;
 
     public constructor(@Inject(ElementRef) elementRef: ElementRef) {
-        this.elementRef = elementRef
-        this.rootElement = $(this.elementRef.nativeElement)
+        super();
+        this.elementRef = elementRef;
+        this.rootElement = $(this.elementRef.nativeElement);
 
-        super()
+        
     }
     
     public playAnimations(self){
         //
-        console.log(self.targetImage);
         TweenMax.to(self.targetImage, 1, {css: {transform:"scale(1.25)"}, ease:Power3.easeOut});
     }
     
