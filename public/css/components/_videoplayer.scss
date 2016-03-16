@@ -94,3 +94,22 @@ videoplayer-video {
 	position: absolute;
 	top: 0;
 }
+
+#rl-coffee-what-scroll{
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0,0,0,.3);
+    bottom: 0px;
+    z-index: 2;
+    opacity: .5;
+    img{
+        width: 75px;
+        position: inherit;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}

@@ -1653,6 +1653,22 @@ ka-coffee-port-what {
     z-index: 1;
     position: absolute;
     top: 0; }
+  ka-coffee-port-what #rl-coffee-what-scroll {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0px;
+    z-index: 2;
+    opacity: .5; }
+    ka-coffee-port-what #rl-coffee-what-scroll img {
+      width: 75px;
+      position: inherit;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto; }
   ka-coffee-port-what grind-row {
     width: 100%;
     display: inline-block; }
