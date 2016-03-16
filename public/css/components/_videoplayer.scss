@@ -110,6 +110,10 @@ videoplayer-side {
 	.rl-coffee-videoPlayer-thumb {
 		@include transitionEaseInOut(0.5s);
 	}
+
+	#rl-coffee-what-scroll {
+		display: none;
+	}
 }
 
 videoplayer-side:hover {
