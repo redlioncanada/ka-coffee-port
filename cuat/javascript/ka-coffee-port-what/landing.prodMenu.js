@@ -43,7 +43,7 @@ System.register(['angular2/core', './landing.timeline-controller.js', './landing
                         new products_model_1.ProductModel("/images/ka-coffee-port-what/rl-coffee-btn-burr.jpg", "Burr Grinder »", "", "http://cuat.kitchenaid.ca/en_CA/2_1_2_3_3442/brand_small-appliances_coffee-products_burr-grinder.content.html?skipCache=true", ""),
                         new products_model_1.ProductModel("/images/ka-coffee-port-what/rl-coffee-siphon.jpg", "Siphon Coffee Brewer »", "", "http://cuat.kitchenaid.ca/en_CA/2_1_2_3_3450/brand_small-appliances_coffee-products_siphonbrew.content.html?skipCache=true", ""),
                         new products_model_1.ProductModel("/images/ka-coffee-port-what/rl-coffee-btn-espresso.jpg", "Espresso »", "", "http://cuat.kitchenaid.ca/en_CA/2_1_2_3_3445/brand_small-appliances_coffee-products_espresso-coffee.content.html", ""),
-                        new products_model_1.ProductModel("/images/ka-coffee-port-what/rl-coffee-btn-french.jpg", "Precision Press »", "", "http://cuat.kitchenaid.ca/en_CA/2_1_2_3_3448/brand_small-appliances_coffee-products_precision-press.content.html?skipCache=true", ""),
+                        new products_model_1.ProductModel("/images/ka-coffee-port-what/rl-coffee-btn-french.jpg", "Precision Press »", "", "", ""),
                         new products_model_1.ProductModel("/images/ka-coffee-port-what/rl-coffee-btn-PO.jpg", "Custom Pour Over Coffee Brewer »", "", "http://cuat.kitchenaid.ca/en_CA/2_1_2_3_3447/brand_small-appliances_coffee-products_pour-over-coffee.content.html?skipCache=true", "")
                     ];
                     this.elementRef = elementRef;
