@@ -1571,7 +1571,8 @@ ka-coffee-port-what {
       text-align: center;
       padding: 20px; }
     ka-coffee-port-what brew-method .rl-coffee-float-btn {
-      overflow: hidden; }
+      overflow: hidden;
+      pointer-events: none; }
     ka-coffee-port-what brew-method .rl-coffee-floatLearn {
       display: none; }
     ka-coffee-port-what brew-method .rl-coffee-float-img {
