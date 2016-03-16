@@ -1,4 +1,4 @@
-videoplayer {
+videoplayer,videoplayer-side {
 	overflow: hidden;
 	margin-top: 117px !important;
 
@@ -34,6 +34,11 @@ videoplayer {
 			margin-bottom: 5px;
             padding-left: 20px;
             padding-right: 40px;
+		}
+
+		.rl-coffee-videoPlayer-header {
+			width: 30%;
+			margin-bottom: 40px;
 		}
 
 		.rl-coffee-videoPlayer-desc {
@@ -87,6 +92,37 @@ videoplayer {
 
 
 }
+
+videoplayer-side {
+	p.rl-coffee-videoPlayer-desc {
+		padding: 0 60px 20px 60px;
+		max-width: 400px;
+		font-size: 14px;
+		line-height: 18px !important;
+		text-transform: initial !important;
+		text-align: justify;
+	}
+
+	.rl-coffee-videoPlayer-divider {
+		display: none;
+	}
+
+	.rl-coffee-videoPlayer-thumb {
+		@include transitionEaseInOut(0.5s);
+	}
+
+	#rl-coffee-what-scroll {
+		display: none;
+	}
+}
+
+videoplayer-side:hover {
+	.rl-coffee-videoPlayer-thumb {
+		@include grow(1.3);
+	}
+}
+
+
 
 videoplayer-video {
 	width: 100%;
