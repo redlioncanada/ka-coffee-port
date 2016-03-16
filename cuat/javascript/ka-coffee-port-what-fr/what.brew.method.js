@@ -1,4 +1,4 @@
-System.register(['angular2/core', './landing.timeline-controller', './landing.floatButton', './models/products.model'], function(exports_1, context_1) {
+System.register(['angular2/core', './landing.timeline-controller.js', './landing.floatButton.js', './models/products.model.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -19,7 +19,7 @@ System.register(['angular2/core', './landing.timeline-controller', './landing.fl
         return function (target, key) { decorator(target, key, paramIndex); }
     };
     var core_1, landing_timeline_controller_1, landing_floatButton_1, products_model_1;
-    var ProductMenu;
+    var BrewMethod;
     return {
         setters:[
             function (core_1_1) {
@@ -35,45 +35,47 @@ System.register(['angular2/core', './landing.timeline-controller', './landing.fl
                 products_model_1 = products_model_1_1;
             }],
         execute: function() {
-            ProductMenu = (function (_super) {
-                __extends(ProductMenu, _super);
-                function ProductMenu(elementRef) {
+            BrewMethod = (function (_super) {
+                __extends(BrewMethod, _super);
+                function BrewMethod(elementRef) {
                     _super.call(this);
-                    this.products = [
-                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-burr.jpg", "MOULIN À CAFÉ À MEULES »", "", "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3442/brand_small-appliances_coffee-products_burr-grinder.content.html?skipCache=true", ""),
-                        new products_model_1.ProductModel("./public/images/rl-coffee-siphon.jpg", "CAFETIÈRE À DÉCOMPRESSION »", "", "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3450/brand_small-appliances_coffee-products_siphonbrew.content.html?skipCache=true", ""),
-                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-espresso.jpg", "MACHINE À ESPRESSO »", "", "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3445/brand_small-appliances_coffee-products_espresso-coffee.content.html", ""),
-                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-french.jpg", "CAFETIÈRE À PISTON DE PRÉCISION »", "", "", ""),
-                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-PO.jpg", "INFUSEUR DE CAFÉ À FILTRE PERSONNALISÉ »", "", "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3447/brand_small-appliances_coffee-products_pour-over-coffee.content.html?skipCache=true", "")
+                    this.images = [
+                        new products_model_1.ProductModel("/images/ka-coffee-port-what-fr/whatiscraftcoffee/what-water-temp.jpg", "TEMPÉRATURE DE L'EAU", "Une eau à température idéale permet aux grains de s'épanouir et de libérer leur saveur.", " ", " "),
+                        new products_model_1.ProductModel("/images/ka-coffee-port-what-fr/whatiscraftcoffee/what-brew-time.jpg", "DURÉE D'INFUSION OPTIMALE", "Une durée d'infusion adéquate est essentielle pour assurer que la torréfaction, la mouture et la température de l’eau se combinent et révèlent ainsi la saveur optimale du café.", " ", " "),
                     ];
                     this.elementRef = elementRef;
                     this.rootElement = $(this.elementRef.nativeElement);
                 }
-                ProductMenu.prototype.playAnimations = function (bType) {
+                BrewMethod.prototype.playAnimations = function (self) {
                     //
+                    //TweenMax.to(self.targetDiv, .5, {css: {transform:"scale(1.1)"}, ease:Power3.easeOut});
                 };
-                ProductMenu.prototype.resetAnimations = function () {
+                BrewMethod.prototype.resetAnimations = function (self) {
                     //
+                    // TweenMax.to(self.targetDiv, .5, {css: {transform:"scale(1)"}, ease:Power3.easeOut});
                 };
-                ProductMenu.prototype.ngAfterViewInit = function () {
-                    //this.target = $(this.rootElement).find('img')
-                    //this.targetWidth = $(this.rootElement).find('img').parent().width()
-                    //this.targetHeight = $(this.rootElement).find('img').parent().height()
-                    //this.resetAnimations();
+                BrewMethod.prototype.ngAfterViewInit = function () {
+                    // var self=this;
+                    //this.target = $(this.rootElement)
+                    //this.targetDiv = $(this.rootElement).find('.rl-coffee-footer-seeMore');
+                    //
+                    //
+                    //this.targetDiv.mouseover(function(){self.playAnimations(self)});
+                    // this.targetDiv.mouseout(function(){self.resetAnimations(self)});
                 };
-                ProductMenu = __decorate([
+                BrewMethod = __decorate([
                     core_1.Component({
-                        selector: 'products',
-                        templateUrl: 'app/views/product.view.html',
+                        selector: 'brew-method',
+                        templateUrl: '/javascript/ka-coffee-port-what-fr/views/what.brew.method.view.html',
                         directives: [landing_floatButton_1.FloatButton]
                     }),
                     __param(0, core_1.Inject(core_1.ElementRef)), 
                     __metadata('design:paramtypes', [core_1.ElementRef])
-                ], ProductMenu);
-                return ProductMenu;
+                ], BrewMethod);
+                return BrewMethod;
             }(landing_timeline_controller_1.TimelineController));
-            exports_1("ProductMenu", ProductMenu);
+            exports_1("BrewMethod", BrewMethod);
         }
     }
 });
-//# sourceMappingURL=landing.prodMenu.js.map
+//# sourceMappingURL=what.brew.method.js.map
