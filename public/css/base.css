@@ -559,7 +559,8 @@ ka-coffee-port {
     height: 450px;
     background-image: url("../../public/images/rl-coffee-masthead.jpg");
     background-repeat: no-repeat;
-    background-size: 100%; }
+    background-size: 100%;
+    overflow: hidden; }
     @media screen and (max-width: 675px) {
       ka-coffee-port masthead {
         height: 600px;
@@ -1250,9 +1251,9 @@ ka-coffee-port {
       color: white;
       text-transform: uppercase;
       font-family: 'Avenir-Black', Arial, Helvetica, sans-serif;
-      font-size: 11px;
+      font-size: 14px;
       font-weight: 600;
-      padding-top: 1.2em;
+      padding-top: 1em;
       cursor: pointer; }
       @media screen and (max-width: 820px) {
         ka-coffee-port #rl-coffee-footer .rl-coffee-footer-seeMore {

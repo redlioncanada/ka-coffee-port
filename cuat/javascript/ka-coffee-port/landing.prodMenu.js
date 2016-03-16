@@ -40,11 +40,11 @@ System.register(['angular2/core', './landing.timeline-controller.js', './landing
                 function ProductMenu(elementRef) {
                     _super.call(this);
                     this.products = [
-                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-btn-burr.jpg", "Burr Grinder »", "", "http://kitchenaid.ca", ""),
-                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-siphon.jpg", "Siphon Coffee Brewer »", "", "http://kitchenaid.ca", ""),
-                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-btn-espresso.jpg", "Espresso »", "", "http://kitchenaid.ca", ""),
-                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-btn-french.jpg", "Precision Press »", "", "http://kitchenaid.ca", ""),
-                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-btn-PO.jpg", "Custom Pour Over Coffee Brewer »", "", "http://kitchenaid.ca", "")
+                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-btn-burr.jpg", "MOULIN À CAFÉ À MEULES »", "", "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3442/brand_small-appliances_coffee-products_burr-grinder.content.html?skipCache=true", ""),
+                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-siphon.jpg", "CAFETIÈRE À DÉCOMPRESSION »", "", "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3450/brand_small-appliances_coffee-products_siphonbrew.content.html?skipCache=true", ""),
+                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-btn-espresso.jpg", "MACHINE À ESPRESSO »", "", "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3445/brand_small-appliances_coffee-products_espresso-coffee.content.html", ""),
+                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-btn-french.jpg", "CAFETIÈRE À PISTON DE PRÉCISION »", "", "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3448/brand_small-appliances_coffee-products_precision-press.content.html?skipCache=true", ""),
+                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-btn-PO.jpg", "INFUSEUR DE CAFÉ À FILTRE PERSONNALISÉ »", "", "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3447/brand_small-appliances_coffee-products_pour-over-coffee.content.html?skipCache=true", "")
                     ];
                     this.elementRef = elementRef;
                     this.rootElement = $(this.elementRef.nativeElement);
