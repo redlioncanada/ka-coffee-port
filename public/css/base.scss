@@ -65,7 +65,11 @@ ka-coffee-port-what {
 		cursor: default;
 		@include Avenir-Bold;
 	}
-
+    
+    h2{
+        font-weight: 600;
+    }
+    
 	p,span,div {
 		//cursor: pointer;
 	}

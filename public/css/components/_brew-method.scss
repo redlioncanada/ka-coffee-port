@@ -33,12 +33,13 @@ brew-method {
         right:0;
         text-align: center;
         padding: 20px;
-        
+        font-weight: 600;
     
     }
     
     .rl-coffee-float-btn{
         overflow: hidden;
+        pointer-events:none;
     }
     
     .rl-coffee-floatLearn{

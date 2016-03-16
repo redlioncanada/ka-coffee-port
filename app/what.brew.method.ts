@@ -18,8 +18,8 @@ export class BrewMethod extends TimelineController {
 
     public images:[ProductModel] = [
        
-        new ProductModel("./public/images/whatiscraftcoffee/what-water-temp.jpg","WATER TEMPERATURE","The correct water temperature allows the grinds to awaken and reveal their flavour."," "," "),
-        new ProductModel("./public/images/whatiscraftcoffee/what-brew-time.jpg","OPTIMAL BREW TIME","The proper brew time is essential to ensuring the roast, grind, and temperature extract properly."," "," "),
+        new ProductModel("./public/images/whatiscraftcoffee/what-water-temp.jpg","TEMPÉRATURE DE L'EAU","Une eau à température idéale permet aux grains de s'épanouir et de libérer leur saveur."," "," "),
+        new ProductModel("./public/images/whatiscraftcoffee/what-brew-time.jpg","DURÉE D'INFUSION OPTIMALE","Une durée d'infusion adéquate est essentielle pour assurer que la torréfaction, la mouture et la température de l’eau se combinent et révèlent ainsi la saveur optimale du café."," "," "),
     ];
 
     private rootElement;

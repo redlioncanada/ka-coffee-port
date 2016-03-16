@@ -1570,9 +1570,11 @@ ka-coffee-port-what {
       left: 0;
       right: 0;
       text-align: center;
-      padding: 20px; }
+      padding: 20px;
+      font-weight: 600; }
     ka-coffee-port-what brew-method .rl-coffee-float-btn {
-      overflow: hidden; }
+      overflow: hidden;
+      pointer-events: none; }
     ka-coffee-port-what brew-method .rl-coffee-floatLearn {
       display: none; }
     ka-coffee-port-what brew-method .rl-coffee-float-img {
@@ -1738,6 +1740,8 @@ ka-coffee-port-what {
     cursor: default;
     font-family: 'Avenir-Black', Helvetica, Arial, sans-serif;
     font-weight: 800; }
+  ka-coffee-port-what h2 {
+    font-weight: 600; }
   ka-coffee-port-what * {
     box-sizing: border-box; }
   ka-coffee-port-what a {
