@@ -1172,7 +1172,8 @@ ka-coffee-port {
     position: relative;
     margin: auto;
     left: 0;
-    right: 0; }
+    right: 0;
+    top: 20px; }
     ka-coffee-port #rl-coffee-footer .rl-coffee-inner-footer {
       position: absolute; }
     ka-coffee-port #rl-coffee-footer .rl-coffee-beans {
