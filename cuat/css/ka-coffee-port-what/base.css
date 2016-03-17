@@ -1279,10 +1279,12 @@ ka-coffee-port-what {
       width: 50%;
       float: left;
       position: relative;
-      overflow: hidden; }
+      overflow: hidden;
+      height: 100%; }
       @media screen and (max-width: 685px) {
         ka-coffee-port-what intro #rl-coffee-what-row-half {
-          width: 100%; } }
+          width: 100%;
+          height: 50%; } }
     ka-coffee-port-what intro .notouch {
       pointer-events: none; }
       ka-coffee-port-what intro .notouch .rl-coffee-float-btn {
@@ -1585,7 +1587,8 @@ ka-coffee-port-what {
       width: 100%; }
   ka-coffee-port-what videoplayer, ka-coffee-port-what videoplayer-side {
     overflow: hidden;
-    margin-top: 117px !important; }
+    margin-top: 117px !important;
+    height: 100%; }
     ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info {
       position: relative;
       z-index: 2;
