@@ -63,10 +63,10 @@ System.register(['angular2/core', './landing.videoPlayer.video.js', './services/
                 VideoPlayer.prototype.scrollClick = function (self) {
                     TweenMax.to(self.scrollButton, .5, { css: { opacity: .5 }, ease: Power3.easeOut });
                     //var doc = document.querySelector("document");
-                    $(window).scrollTop(600);
-                    //.animate({
-                    //   scrollTop:  600
-                    //},1000);
+                    //$(window).scrollTop(600)
+                    $('body, html').animate({
+                        scrollTop: 600
+                    }, 1000);
                     //this.rootElement.parent().animate({
                     // scrollTop:  600
                     //});
