@@ -572,7 +572,7 @@ ka-coffee-port {
     @media screen and (max-width: 675px) {
       ka-coffee-port masthead {
         height: 600px;
-        background-size: 150%; } }
+        background-size: 200%; } }
     ka-coffee-port masthead #rl-coffee-craft-logo {
       position: absolute;
       top: 20px;
