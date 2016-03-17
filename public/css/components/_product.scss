@@ -2,6 +2,7 @@ products {
 	width: 100%;
     height: 275px;
     
+    
     .rl-coffee-middle-header{
         background-image: url("../../public/images/rl-coffee-linenBack.jpg");
         background-repeat:no-repeat;
@@ -92,8 +93,23 @@ products {
                 max-height: 125px;
             }
             
+            .rl-coffee-float-btn{
+                max-height: inherit;
+                >div{
+                    max-height: inherit;
+                    >a{
+                        max-height: inherit;
+                    }
+                }
+            }
+            
+            .rl-coffee-float-img{
+                max-height: inherit;
+            }
+            
             img{
-                height: 100%;
+                
+                max-height: inherit;
                 width: auto;
                 transform: scale(1.05);
                 -webkit-transform: scale(1.05);
