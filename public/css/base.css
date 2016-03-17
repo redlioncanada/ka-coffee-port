@@ -569,6 +569,8 @@ ka-coffee-port {
       position: absolute;
       top: 20px;
       left: 20px; }
+      ka-coffee-port masthead #rl-coffee-craft-logo img {
+        width: 188px; }
     ka-coffee-port masthead #rl-coffee-social {
       position: absolute;
       right: 10px;
