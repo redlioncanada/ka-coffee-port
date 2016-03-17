@@ -46,7 +46,7 @@ export class VideoPlayer extends TimelineController {
         TweenMax.to(self.scrollButton, .5, {css: {opacity:.5}, ease:Power3.easeOut});
         //var doc = document.querySelector("document");
        //$(window).scrollTop(600)
-       $('body').animate({
+       $('body, html').animate({
 		    scrollTop:  600
 	    },1000);
         
