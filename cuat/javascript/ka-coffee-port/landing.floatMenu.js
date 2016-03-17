@@ -40,8 +40,8 @@ System.register(['angular2/core', './landing.timeline-controller.js', './landing
                 function FloatMenu(elementRef) {
                     _super.call(this);
                     this.features = [
-                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-what-button.png", "What is craft coffee?", "", "http://kitchenaid.ca", ""),
-                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-brewer-button.png", "KITCHENAID® CRAFT BREWERS", "", "http://kitchenaid.ca", "")
+                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-what-button.png", "What is craft coffee?", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_22847/brand_small-appliances_coffee-products_test-what-is-craft-coffee.content.html?skipCache=true", ""),
+                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-brewer-button.png", "KITCHENAID® CRAFT BREWERS", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3449/brand_small-appliances_coffee-products_product-information.content.html?skipCache=true", "")
                     ];
                     this.elementRef = elementRef;
                     this.rootElement = $(this.elementRef.nativeElement);

@@ -18,8 +18,8 @@ export class FloatMenu extends TimelineController {
 
     public features:[ProductModel] = [
        
-        new ProductModel("./public/images/rl-coffee-what-button.png","What is craft coffee?","","http://kitchenaid.ca",""),
-        new ProductModel("./public/images/rl-coffee-brewer-button.png","KITCHENAID® CRAFT BREWERS","","http://kitchenaid.ca","")
+        new ProductModel("./public/images/rl-coffee-what-button.png","What is craft coffee?","","http://www.kitchenaid.ca/en_CA/2_1_2_3_22847/brand_small-appliances_coffee-products_test-what-is-craft-coffee.content.html?skipCache=true",""),
+        new ProductModel("./public/images/rl-coffee-brewer-button.png","KITCHENAID® CRAFT BREWERS","","http://www.kitchenaid.ca/en_CA/2_1_2_3_3449/brand_small-appliances_coffee-products_product-information.content.html?skipCache=true","")
     ];
 
     private rootElement;
