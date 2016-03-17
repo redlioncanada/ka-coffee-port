@@ -509,8 +509,16 @@ ka-coffee-port-what {
       @media screen and (max-width: 500px) {
         ka-coffee-port-what products float-button {
           max-height: 125px; } }
+      ka-coffee-port-what products float-button .rl-coffee-float-btn {
+        max-height: inherit; }
+        ka-coffee-port-what products float-button .rl-coffee-float-btn > div {
+          max-height: inherit; }
+          ka-coffee-port-what products float-button .rl-coffee-float-btn > div > a {
+            max-height: inherit; }
+      ka-coffee-port-what products float-button .rl-coffee-float-img {
+        max-height: inherit; }
       ka-coffee-port-what products float-button img {
-        height: 100%;
+        max-height: inherit;
         width: auto;
         transform: scale(1.05);
         -webkit-transform: scale(1.05); }
