@@ -60,6 +60,9 @@ ka-coffee-port {
 	position: relative;
 	display: block;
 	margin-top: 117px;
+    @media screen and (max-width: 768px) {
+        margin-top: 0px;
+    }
 
 	h1,h2,h3,h4,h5 {
 		color: $titleColor !important;

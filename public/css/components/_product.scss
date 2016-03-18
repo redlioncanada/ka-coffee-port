@@ -53,20 +53,29 @@ products {
             max-height: 250px;
             overflow: hidden;
             @media screen and (min-width: 2000px) {
-                max-height: 600px;
+                max-height: 360px;
+                height: 360px;
             }
             @media screen and (max-width: 1999px) {
-                max-height: 300px;
+                max-height: 350px;
+                height: 350px;
+            }
+            @media screen and (max-width: 1800px) {
+                max-height: 325px;
+                height: 325px;
             }
              @media screen and (max-width: 1650px) {
-                max-height: 275px;
+                max-height: 285px;
+                height: 285px;
             }
              @media screen and (max-width: 1500px) {
                 max-height: 265px;
+                height: 265px;
             }
             
             @media screen and (max-width: 1400px) {
                 max-height: 250px;
+                height: 250px;
             }
             
             @media screen and (max-width: 1240px) {
@@ -105,17 +114,19 @@ products {
             
             .rl-coffee-float-img{
                 max-height: inherit;
+                height: 100%;
             }
             
             img{
                 
                 max-height: inherit;
                 width: auto;
+                height: 100%;
                 transform: scale(1.05);
                 -webkit-transform: scale(1.05);
                 @media screen and (min-width: 1366px) {
                     width: 100%;
-                    height: auto;
+                   // height: 100%;
                 }
             }
             

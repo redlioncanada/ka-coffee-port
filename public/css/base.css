@@ -475,19 +475,28 @@ ka-coffee-port {
       overflow: hidden; }
       @media screen and (min-width: 2000px) {
         ka-coffee-port products float-button {
-          max-height: 600px; } }
+          max-height: 360px;
+          height: 360px; } }
       @media screen and (max-width: 1999px) {
         ka-coffee-port products float-button {
-          max-height: 300px; } }
+          max-height: 350px;
+          height: 350px; } }
+      @media screen and (max-width: 1800px) {
+        ka-coffee-port products float-button {
+          max-height: 325px;
+          height: 325px; } }
       @media screen and (max-width: 1650px) {
         ka-coffee-port products float-button {
-          max-height: 275px; } }
+          max-height: 285px;
+          height: 285px; } }
       @media screen and (max-width: 1500px) {
         ka-coffee-port products float-button {
-          max-height: 265px; } }
+          max-height: 265px;
+          height: 265px; } }
       @media screen and (max-width: 1400px) {
         ka-coffee-port products float-button {
-          max-height: 250px; } }
+          max-height: 250px;
+          height: 250px; } }
       @media screen and (max-width: 1240px) {
         ka-coffee-port products float-button {
           max-height: 225px; } }
@@ -517,16 +526,17 @@ ka-coffee-port {
           ka-coffee-port products float-button .rl-coffee-float-btn > div > a {
             max-height: inherit; }
       ka-coffee-port products float-button .rl-coffee-float-img {
-        max-height: inherit; }
+        max-height: inherit;
+        height: 100%; }
       ka-coffee-port products float-button img {
         max-height: inherit;
         width: auto;
+        height: 100%;
         transform: scale(1.05);
         -webkit-transform: scale(1.05); }
         @media screen and (min-width: 1366px) {
           ka-coffee-port products float-button img {
-            width: 100%;
-            height: auto; } }
+            width: 100%; } }
       ka-coffee-port products float-button .rl-coffee-floatButton-copy {
         position: relative;
         margin-left: auto;
@@ -1731,6 +1741,9 @@ ka-coffee-port {
       @media screen and (max-width: 900px) {
         ka-coffee-port grind-row .lower {
           bottom: 20px; } }
+  @media screen and (max-width: 768px) {
+    ka-coffee-port {
+      margin-top: 0px; } }
   ka-coffee-port h1, ka-coffee-port h2, ka-coffee-port h3, ka-coffee-port h4, ka-coffee-port h5 {
     color: #cc0000 !important;
     cursor: default;
