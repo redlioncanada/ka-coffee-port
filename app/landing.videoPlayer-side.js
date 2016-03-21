@@ -34,7 +34,7 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
                     this.video = {
                         id: 'gXm2NRiC0oY',
                         thumb: './public/images/whatiscraftcoffee/what-topBackTexture.jpg',
-                        desc: 'Un bon caf&eacute; est une combinaison subtile de grains soigneusement s&eacute;lectionn&eacute;s et d\'une m&eacute;thode d\'infusion particuli&egrave;re. KitchenAid s\'est associ&eacute; &agrave; des baristas et des experts du caf&eacute; pour appliquer consciencieusement cette formule et cr&eacute;er une nouvelle gamme d\'infuseurs &agrave; caf&eacute;. Chaque appareil est sp&eacute;cialement con&ccedil;u pour c&eacute;l&eacute;brer l\'art du caf&eacute; artisanal dans le confort de chez-vous, parce que nous sommes convaincus que <em>la vie a meilleur go&ucirc;t avec du caf&eacute;.</em>',
+                        desc: 'Un bon caf&eacute; est une combinaison subtile de grains soigneusement s&eacute;lectionn&eacute;s et d\'une m&eacute;thode d\'infusion particuli&egrave;re. KitchenAid s\'est associ&eacute; &agrave; des baristas et des experts du caf&eacute; pour appliquer consciencieusement cette formule et cr&eacute;er une nouvelle gamme d\'infuseurs &agrave; caf&eacute;. Chaque appareil est sp&eacute;cialement con&ccedil;u pour c&eacute;l&eacute;brer l\'art du caf&eacute; artisanal dans le confort de chez vous, parce que nous sommes convaincus que <em>la vie a meilleur go&ucirc;t avec du caf&eacute;.</em>',
                         header: './public/images/whatiscraftcoffee/coffee-bean-with-line.png',
                         cta: 'REGARDEZ LA VID&Eacute;O'
                     };

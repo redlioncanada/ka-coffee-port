@@ -1654,6 +1654,7 @@ ka-coffee-port-what {
         padding-left: 20px;
         padding-right: 40px; }
       ka-coffee-port-what videoplayer .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta, ka-coffee-port-what videoplayer-side .rl-coffee-videoPlayer-info .rl-coffee-videoPlayer-cta {
+        display: none;
         position: relative;
         top: 20px;
         left: 0px;
