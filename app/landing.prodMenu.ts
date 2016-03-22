@@ -23,7 +23,7 @@ export class ProductMenu extends TimelineController {
             "",
             "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3442/brand_small-appliances_coffee-products_burr-grinder.content.html?skipCache=true",
             "",
-            "@language-Craft Coffee Landing Page",
+            "@language-What is Craft Coffee Landing Page",
             "@language-Clicked Main Craft Coffee Collection",
             "Burr Grinder"
         ),
@@ -32,7 +32,7 @@ export class ProductMenu extends TimelineController {
             "",
             "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3450/brand_small-appliances_coffee-products_siphonbrew.content.html?skipCache=true",
             "",
-            "@language-Craft Coffee Landing Page",
+            "@language-What is Craft Coffee Landing Page",
             "@language-Clicked Main Craft Coffee Collection",
             "Siphon Coffee Brewer"
         ),
@@ -41,7 +41,7 @@ export class ProductMenu extends TimelineController {
             "",
             "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3445/brand_small-appliances_coffee-products_espresso-coffee.content.html",
             "",
-            "@language-Craft Coffee Landing Page",
+            "@language-What is Craft Coffee Landing Page",
             "@language-Clicked Main Craft Coffee Collection",
             "Espresso"
         ),
@@ -50,7 +50,7 @@ export class ProductMenu extends TimelineController {
             "",
             "",
             "",
-            "@language-Craft Coffee Landing Page",
+            "@language-What is Craft Coffee Landing Page",
             "@language-Clicked Main Craft Coffee Collection",
             "Precision Press"
         ),
@@ -59,7 +59,7 @@ export class ProductMenu extends TimelineController {
             "",
             "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3447/brand_small-appliances_coffee-products_pour-over-coffee.content.html?skipCache=true",
             "",
-            "@language-Craft Coffee Landing Page",
+            "@language-What is Craft Coffee Landing Page",
             "@language-Clicked Main Craft Coffee Collection",
             "Pour Over Brewer"
         )

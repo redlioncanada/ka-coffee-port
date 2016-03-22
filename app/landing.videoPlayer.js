@@ -54,8 +54,8 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
                     };
                     this.selected = false;
                     this.rootElement = $(elementRef.nativeElement);
-                    this.analyticsCategory = '@language-Craft Coffee Landing Page';
-                    this.analyticsAction = '@language-Clicked Learn More CTA\'s';
+                    this.analyticsCategory = '@language-What is Craft Coffee Landing Page';
+                    this.analyticsAction = '@language-Clicked Watch Video CTA\'s';
                     this.analyticsLabel = 'What is Craft Coffee';
                 }
                 VideoPlayer.prototype.scrollOver = function (self) {
