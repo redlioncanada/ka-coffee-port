@@ -43,9 +43,9 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
                     };
                     this.selected = false;
                     this.rootElement = $(elementRef.nativeElement);
-                    this.analyticsCategory = '@language-Craft Coffee Landing Page';
-                    this.analyticsAction = '@language-Clicked Learn More CTA\'s';
-                    this.analyticsLabel = 'KA-Craft Brewers';
+                    this.analyticsCategory = '@language-What is Craft Coffee Landing Page';
+                    this.analyticsAction = '@language-Clicked Watch Video CTA\'s';
+                    this.analyticsLabel = 'What is Craft Coffee II';
                 }
                 VideoPlayerSide.prototype.ngAfterViewInit = function () {
                     $(this.rootElement).find('iframe').attr('height', $(this.rootElement).closest('intro').height());

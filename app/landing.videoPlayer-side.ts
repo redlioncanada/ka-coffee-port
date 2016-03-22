@@ -29,9 +29,9 @@ export class VideoPlayerSide {
 	constructor(private logger: Logger, @Inject(ElementRef) elementRef: ElementRef) {
 		this.selected = false
 		this.rootElement = $(elementRef.nativeElement)
-		this.analyticsCategory = '@language-Craft Coffee Landing Page'
-		this.analyticsAction = '@language-Clicked Learn More CTA\'s'
-		this.analyticsLabel = 'KA-Craft Brewers'
+		this.analyticsCategory = '@language-What is Craft Coffee Landing Page'
+		this.analyticsAction = '@language-Clicked Watch Video CTA\'s'
+		this.analyticsLabel = 'What is Craft Coffee II'
 	}
 
 	ngAfterViewInit() {
