@@ -1,4 +1,4 @@
-System.register(['angular2/core', './landing.timeline-controller'], function(exports_1, context_1) {
+System.register(['angular2/core', './landing.timeline-controller', './analytics.directive'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -18,7 +18,7 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
     var __param = (this && this.__param) || function (paramIndex, decorator) {
         return function (target, key) { decorator(target, key, paramIndex); }
     };
-    var core_1, landing_timeline_controller_1;
+    var core_1, landing_timeline_controller_1, analytics_directive_1;
     var FloatButton;
     return {
         setters:[
@@ -27,6 +27,9 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
             },
             function (landing_timeline_controller_1_1) {
                 landing_timeline_controller_1 = landing_timeline_controller_1_1;
+            },
+            function (analytics_directive_1_1) {
+                analytics_directive_1 = analytics_directive_1_1;
             }],
         execute: function() {
             FloatButton = (function (_super) {
@@ -65,9 +68,22 @@ System.register(['angular2/core', './landing.timeline-controller'], function(exp
                     core_1.Input(), 
                     __metadata('design:type', Object)
                 ], FloatButton.prototype, "floatUrl", void 0);
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Object)
+                ], FloatButton.prototype, "analyticsCategory", void 0);
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Object)
+                ], FloatButton.prototype, "analyticsAction", void 0);
+                __decorate([
+                    core_1.Input(), 
+                    __metadata('design:type', Object)
+                ], FloatButton.prototype, "analyticsLabel", void 0);
                 FloatButton = __decorate([
                     core_1.Component({
                         selector: 'float-button',
+                        directives: [analytics_directive_1.AnalyticsOn],
                         templateUrl: 'app/views/masthead.floatButton.view.html',
                     }),
                     __param(0, core_1.Inject(core_1.ElementRef)), 

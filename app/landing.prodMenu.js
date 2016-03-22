@@ -40,11 +40,11 @@ System.register(['angular2/core', './landing.timeline-controller', './landing.fl
                 function ProductMenu(elementRef) {
                     _super.call(this);
                     this.products = [
-                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-burr.jpg", "Burr Grinder »", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3442/brand_small-appliances_coffee-products_burr-grinder.content.html?skipCache=true", ""),
-                        new products_model_1.ProductModel("./public/images/rl-coffee-siphon.jpg", "Siphon Coffee Brewer »", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3450/brand_small-appliances_coffee-products_siphonbrew.content.html?skipCache=true", ""),
-                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-espresso.jpg", "Espresso »", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3445/brand_small-appliances_coffee-products_espresso-coffee.content.html", ""),
-                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-french.jpg", "Precision Press »", "", "", ""),
-                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-PO.jpg", "Custom Pour Over Coffee Brewer »", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3447/brand_small-appliances_coffee-products_pour-over-coffee.content.html?skipCache=true", "")
+                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-burr.jpg", "Burr Grinder »", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3442/brand_small-appliances_coffee-products_burr-grinder.content.html?skipCache=true", "", "@language-Craft Coffee Landing Page", "@language-Clicked Main Craft Coffee Collection", "Burr Grinder"),
+                        new products_model_1.ProductModel("./public/images/rl-coffee-siphon.jpg", "Siphon Coffee Brewer »", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3450/brand_small-appliances_coffee-products_siphonbrew.content.html?skipCache=true", "", "@language-Craft Coffee Landing Page", "@language-Clicked Main Craft Coffee Collection", "Siphon Coffee Brewer"),
+                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-espresso.jpg", "Espresso »", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3445/brand_small-appliances_coffee-products_espresso-coffee.content.html", "", "@language-Craft Coffee Landing Page", "@language-Clicked Main Craft Coffee Collection", "Espresso"),
+                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-french.jpg", "Precision Press »", "", "", "", "@language-Craft Coffee Landing Page", "@language-Clicked Main Craft Coffee Collection", "Precision Press"),
+                        new products_model_1.ProductModel("./public/images/rl-coffee-btn-PO.jpg", "Custom Pour Over Coffee Brewer »", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3447/brand_small-appliances_coffee-products_pour-over-coffee.content.html?skipCache=true", "", "@language-Craft Coffee Landing Page", "@language-Clicked Main Craft Coffee Collection", "Pour Over Brewer")
                     ];
                     this.elementRef = elementRef;
                     this.rootElement = $(this.elementRef.nativeElement);

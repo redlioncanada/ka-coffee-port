@@ -1,4 +1,4 @@
-System.register(['angular2/platform/browser', 'angular2/http', './services/logger.service', './services/googleapi.service', 'angular2/core', './landing.masthead', './landing.prodMenu', './coffee.footer'], function(exports_1, context_1) {
+System.register(['angular2/platform/browser', 'angular2/http', './services/logger.service', './services/googleapi.service', 'angular2/core', './landing.masthead', './landing.prodMenu', './coffee.footer', './services/analytics.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/platform/browser', 'angular2/http', './services/logge
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var browser_1, http_1, logger_service_1, googleapi_service_1, core_1, landing_masthead_1, landing_prodMenu_1, coffee_footer_1;
+    var browser_1, http_1, logger_service_1, googleapi_service_1, core_1, landing_masthead_1, landing_prodMenu_1, coffee_footer_1, analytics_service_1;
     var AppComponent;
     return {
         setters:[
@@ -37,10 +37,16 @@ System.register(['angular2/platform/browser', 'angular2/http', './services/logge
             },
             function (coffee_footer_1_1) {
                 coffee_footer_1 = coffee_footer_1_1;
+            },
+            function (analytics_service_1_1) {
+                analytics_service_1 = analytics_service_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
-                function AppComponent() {
+                function AppComponent(analytics) {
+                    analytics.bind('language', function (str) {
+                        return window.location.href.indexOf('fr_CA/') > -1 ? 'FR' : 'EN';
+                    });
                 }
                 AppComponent = __decorate([
                     core_1.Component({
@@ -48,11 +54,11 @@ System.register(['angular2/platform/browser', 'angular2/http', './services/logge
                         templateUrl: 'app/views/app.view.html',
                         directives: [landing_masthead_1.AppMasthead, landing_prodMenu_1.ProductMenu, coffee_footer_1.AppFooter]
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [analytics_service_1.Analytics])
                 ], AppComponent);
                 return AppComponent;
             }());
-            browser_1.bootstrap(AppComponent, [http_1.HTTP_PROVIDERS, logger_service_1.Logger, googleapi_service_1.GoogleApi]);
+            browser_1.bootstrap(AppComponent, [http_1.HTTP_PROVIDERS, logger_service_1.Logger, googleapi_service_1.GoogleApi, analytics_service_1.Analytics]);
         }
     }
 });

@@ -9,6 +9,7 @@ import {Component} from 'angular2/core';
 import {AppMasthead} from './landing.masthead';
 import {ProductMenu} from './landing.prodMenu';
 import {AppFooter} from './coffee.footer'
+import {Analytics} from './services/analytics.service'
 
 
 @Component({
@@ -17,7 +18,11 @@ import {AppFooter} from './coffee.footer'
     directives: [AppMasthead, ProductMenu, AppFooter]
 })
 class AppComponent {
-    
+	constructor(analytics: Analytics) {
+		analytics.bind('language', function(str) {
+			return window.location.href.indexOf('fr_CA/') > -1 ? 'FR' : 'EN'
+		})
+    }
  }
 
-bootstrap(AppComponent, [HTTP_PROVIDERS, Logger, GoogleApi])
+bootstrap(AppComponent, [HTTP_PROVIDERS, Logger, GoogleApi, Analytics])

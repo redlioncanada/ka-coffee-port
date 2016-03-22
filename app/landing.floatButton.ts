@@ -3,11 +3,14 @@
 import {bootstrap}    from 'angular2/platform/browser'
 import {Component, Input, Inject, ElementRef} from 'angular2/core'
 import {TimelineController} from './landing.timeline-controller'
+import {AnalyticsOn} from './analytics.directive'
+
 
 declare var $: JQueryStatic;
 
 @Component({
     selector: 'float-button',
+    directives: [AnalyticsOn],
     templateUrl: 'app/views/masthead.floatButton.view.html',
 })
 
@@ -15,6 +18,9 @@ export class FloatButton extends TimelineController {
     @Input() floatImage
     @Input() floatCopy
     @Input() floatUrl
+    @Input() analyticsCategory
+    @Input() analyticsAction
+    @Input() analyticsLabel
 
     private rootElement;
     private elementRef: ElementRef;
