@@ -3,7 +3,6 @@
 import {bootstrap}    from 'angular2/platform/browser'
 import {Component, Input, Inject, ElementRef} from 'angular2/core'
 import {TimelineController} from './landing.timeline-controller'
-
 declare var $: JQueryStatic;
 
 @Component({
@@ -20,8 +19,6 @@ export class Footer extends TimelineController {
         super()
         this.elementRef = elementRef
         this.rootElement = $(this.elementRef.nativeElement)
-
-
     }
     
     public playAnimations(){

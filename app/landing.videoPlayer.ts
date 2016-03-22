@@ -7,18 +7,20 @@ import {DOM} from 'angular2/src/platform/dom/dom_adapter'
 import {VideoPlayerVideo} from './landing.videoPlayer.video'
 import {Logger} from './services/logger.service'
 import {TimelineController} from './landing.timeline-controller'
+import {AnalyticsOn} from './analytics.directive'
 
 @Component({
     selector: 'videoplayer',
     templateUrl: 'app/views/landing.videoPlayer.view.html',
-	directives: [VideoPlayerVideo]
+	directives: [VideoPlayerVideo, AnalyticsOn]
 })
 export class VideoPlayer extends TimelineController {
 	public selected: boolean
-	private rootElement;
-    private scrollButton;
-    //private dom = new
-    //private doc;
+	private rootElement
+    private scrollButton
+    public analyticsCategory: string
+	public analyticsAction: string
+	public analyticsLabel: string
 
 	public video = { //https://www.youtube.com/watch?v=-BPDHf3YY_g
 		id: '-BPDHf3YY_g',
@@ -32,6 +34,9 @@ export class VideoPlayer extends TimelineController {
         super();
 		this.selected = false
 		this.rootElement = $(elementRef.nativeElement)
+		this.analyticsCategory = '@language-Craft Coffee Landing Page'
+		this.analyticsAction = '@language-Clicked Learn More CTA\'s'
+		this.analyticsLabel = 'What is Craft Coffee'
 	}
 
     private scrollOver(self){

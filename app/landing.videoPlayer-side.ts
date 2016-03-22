@@ -4,15 +4,19 @@ declare var $: JQueryStatic;
 import {Component, ElementRef, Inject} from 'angular2/core'
 import {VideoPlayerVideo} from './landing.videoPlayer.video'
 import {Logger} from './services/logger.service'
+import {AnalyticsOn} from './analytics.directive'
 
 @Component({
     selector: 'videoplayer-side',
     templateUrl: 'app/views/landing.videoPlayer.view.html',
-	directives: [VideoPlayerVideo]
+	directives: [VideoPlayerVideo, AnalyticsOn]
 })
 export class VideoPlayerSide {
 	public selected: boolean
-	private rootElement;
+	private rootElement
+	public analyticsCategory: string
+	public analyticsAction: string
+	public analyticsLabel: string
 
 	public video =  {
 		id: 'gXm2NRiC0oY',
@@ -25,6 +29,9 @@ export class VideoPlayerSide {
 	constructor(private logger: Logger, @Inject(ElementRef) elementRef: ElementRef) {
 		this.selected = false
 		this.rootElement = $(elementRef.nativeElement)
+		this.analyticsCategory = '@language-Craft Coffee Landing Page'
+		this.analyticsAction = '@language-Clicked Learn More CTA\'s'
+		this.analyticsLabel = 'KA-Craft Brewers'
 	}
 
 	ngAfterViewInit() {

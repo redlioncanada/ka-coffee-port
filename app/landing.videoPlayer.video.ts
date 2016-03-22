@@ -1,5 +1,6 @@
 import {Component, Input, Output, EventEmitter} from 'angular2/core'
 import {Logger} from './services/logger.service'
+import {AnalyticsOn} from './analytics.directive'
 
 @Component({
 	selector: 'videoplayer-video',
