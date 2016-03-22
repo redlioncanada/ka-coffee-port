@@ -3,12 +3,14 @@
 import {bootstrap}    from 'angular2/platform/browser'
 import {Component, Input, Inject, ElementRef} from 'angular2/core'
 import {TimelineController} from './landing.timeline-controller'
+import {AnalyticsOn} from './analytics.directive'
+
 
 declare var $: JQueryStatic;
 @Component({
     selector: 'footer',
     templateUrl:'app/views/footer.view.html',
-    directives: [] 
+    directives: [AnalyticsOn]
 })
 export class AppFooter extends TimelineController {
     
