@@ -65,7 +65,6 @@ System.register(['angular2/platform/browser', 'angular2/http', './services/logge
         execute: function() {
             AppComponent = (function () {
                 function AppComponent(analytics) {
-                    analytics.debugMode(true);
                     analytics.bind('language', function (str) {
                         return window.location.href.indexOf('fr_CA/') > -1 ? 'FR' : 'EN';
                     });

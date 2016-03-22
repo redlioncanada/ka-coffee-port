@@ -26,7 +26,6 @@ import {VideoPlayerSide} from './landing.videoPlayer-side';
 })
 class AppComponent {
 	constructor(analytics: Analytics) {
-		analytics.debugMode(true)
 		analytics.bind('language', function(str) {
 			return window.location.href.indexOf('fr_CA/') > -1 ? 'FR' : 'EN'
 		})
