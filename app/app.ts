@@ -4,6 +4,7 @@ import {HTTP_PROVIDERS} from 'angular2/http';
 import {Logger} from './services/logger.service';
 import {GoogleApi} from './services/googleapi.service';
 import {Component} from 'angular2/core';
+import {Analytics} from './services/analytics.service'
 
 //import {VideoPlayer} from './landing.video-player';
 import {AppMasthead} from './landing.masthead';
@@ -24,7 +25,12 @@ import {VideoPlayerSide} from './landing.videoPlayer-side';
 	directives: [AppMasthead, ProductMenu, AppFooter, WhatIntro, IconRow, RoastRow, BrewMethod, VideoPlayer, VideoPlayerSide, GrindRow]
 })
 class AppComponent {
-    
+	constructor(analytics: Analytics) {
+		analytics.debugMode(true)
+		analytics.bind('language', function(str) {
+			return window.location.href.indexOf('fr_CA/') > -1 ? 'FR' : 'EN'
+		})
+    }
  }
 
-bootstrap(AppComponent, [HTTP_PROVIDERS, Logger, GoogleApi])
+bootstrap(AppComponent, [HTTP_PROVIDERS, Logger, GoogleApi, Analytics])

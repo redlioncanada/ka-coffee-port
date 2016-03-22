@@ -1,4 +1,4 @@
-System.register(['angular2/core', './landing.videoPlayer.video', './services/logger.service', './landing.timeline-controller'], function(exports_1, context_1) {
+System.register(['angular2/core', './landing.videoPlayer.video', './services/logger.service', './landing.timeline-controller', './analytics.directive'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -18,7 +18,7 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
     var __param = (this && this.__param) || function (paramIndex, decorator) {
         return function (target, key) { decorator(target, key, paramIndex); }
     };
-    var core_1, landing_videoPlayer_video_1, logger_service_1, landing_timeline_controller_1;
+    var core_1, landing_videoPlayer_video_1, logger_service_1, landing_timeline_controller_1, analytics_directive_1;
     var VideoPlayer;
     return {
         setters:[
@@ -33,6 +33,9 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
             },
             function (landing_timeline_controller_1_1) {
                 landing_timeline_controller_1 = landing_timeline_controller_1_1;
+            },
+            function (analytics_directive_1_1) {
+                analytics_directive_1 = analytics_directive_1_1;
             }],
         execute: function() {
             /// <reference path="../typings/jquery/jquery.d.ts" />
@@ -42,8 +45,6 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
                 function VideoPlayer(logger, elementRef) {
                     _super.call(this);
                     this.logger = logger;
-                    //private dom = new
-                    //private doc;
                     this.video = {
                         id: '-BPDHf3YY_g',
                         thumb: './public/images/rl-coffee-masthead.jpg',
@@ -53,6 +54,9 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
                     };
                     this.selected = false;
                     this.rootElement = $(elementRef.nativeElement);
+                    this.analyticsCategory = '@language-Craft Coffee Landing Page';
+                    this.analyticsAction = '@language-Clicked Learn More CTA\'s';
+                    this.analyticsLabel = 'What is Craft Coffee';
                 }
                 VideoPlayer.prototype.scrollOver = function (self) {
                     TweenMax.to(self.scrollButton, .7, { css: { opacity: 1 }, ease: Power3.easeOut });
@@ -110,7 +114,7 @@ System.register(['angular2/core', './landing.videoPlayer.video', './services/log
                     core_1.Component({
                         selector: 'videoplayer',
                         templateUrl: 'app/views/landing.videoPlayer.view.html',
-                        directives: [landing_videoPlayer_video_1.VideoPlayerVideo]
+                        directives: [landing_videoPlayer_video_1.VideoPlayerVideo, analytics_directive_1.AnalyticsOn]
                     }),
                     __param(1, core_1.Inject(core_1.ElementRef)), 
                     __metadata('design:paramtypes', [logger_service_1.Logger, core_1.ElementRef])

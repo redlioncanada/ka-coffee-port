@@ -4,6 +4,9 @@ export class ProductModel{
                 public prodName:string = "",
                 public prodDescription:string = "",
                 public prodUrl:string = "",
-                public prodId:string = ""
+                public prodId:string = "",
+				public prodAnalyticsCategory: string = "",
+                public prodAnalyticsAction: string = "",
+                public prodAnalyticsLabel: string = ""
                 ){}
 }

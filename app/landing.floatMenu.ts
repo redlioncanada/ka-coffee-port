@@ -18,7 +18,8 @@ export class FloatMenu extends TimelineController {
 
     public features:[ProductModel] = [
        
-        new ProductModel("./public/images/rl-coffee-what-button.png","What is craft coffee?","","http://kitchenaid.ca",""),
+        new ProductModel(
+            "./public/images/rl-coffee-what-button.png","What is craft coffee?","","http://kitchenaid.ca",""),
         new ProductModel("./public/images/rl-coffee-brewer-button.png","KITCHENAID® CRAFT BREWERS","","http://kitchenaid.ca","")
     ];
 
