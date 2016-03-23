@@ -49,6 +49,7 @@ export class Analytics {
 	}
 
 	public debugMode(val: boolean) {
+		if (val) this.logger.log(`Analytics: now in debug mode`)
 		this.debug = val;
 	}
 
@@ -80,12 +81,12 @@ export class Analytics {
 				//matched keyword
 				var replace = this.bindings[i]['function'].call(this, str)
 				str = str.replace(`@${this.bindings[i].keyword}`, replace)
-				if (!replace) this.logger.log(`${this.bindings[i].keyword} bind callback returned an empty string`)
+				if (!replace) this.logger.log(`Analytics: ${this.bindings[i].keyword} bind callback returned an empty string`)
 			}
 		}
 
 		if (str.indexOf('@') > -1) {
-			this.logger.error(`unrecognized binding in ${str}, ignoring`)
+			this.logger.error(`Analytics: unrecognized binding in ${str}, ignoring`)
 			return false
 		}
 

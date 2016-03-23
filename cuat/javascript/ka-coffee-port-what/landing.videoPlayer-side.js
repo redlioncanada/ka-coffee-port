@@ -1,4 +1,4 @@
-System.register(['angular2/core', './landing.videoPlayer.video.js', './services/logger.service.js'], function(exports_1, context_1) {
+System.register(['angular2/core', './landing.videoPlayer.video.js', './services/logger.service.js', './analytics.directive.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -13,7 +13,7 @@ System.register(['angular2/core', './landing.videoPlayer.video.js', './services/
     var __param = (this && this.__param) || function (paramIndex, decorator) {
         return function (target, key) { decorator(target, key, paramIndex); }
     };
-    var core_1, landing_videoPlayer_video_1, logger_service_1;
+    var core_1, landing_videoPlayer_video_1, logger_service_1, analytics_directive_1;
     var VideoPlayerSide;
     return {
         setters:[
@@ -25,6 +25,9 @@ System.register(['angular2/core', './landing.videoPlayer.video.js', './services/
             },
             function (logger_service_1_1) {
                 logger_service_1 = logger_service_1_1;
+            },
+            function (analytics_directive_1_1) {
+                analytics_directive_1 = analytics_directive_1_1;
             }],
         execute: function() {
             /// <reference path="../typings/jquery/jquery.d.ts" />
@@ -40,6 +43,9 @@ System.register(['angular2/core', './landing.videoPlayer.video.js', './services/
                     };
                     this.selected = false;
                     this.rootElement = $(elementRef.nativeElement);
+                    this.analyticsCategory = '@language-What is Craft Coffee Landing Page';
+                    this.analyticsAction = '@language-Clicked Watch Video CTA\'s';
+                    this.analyticsLabel = 'What is Craft Coffee II';
                 }
                 VideoPlayerSide.prototype.ngAfterViewInit = function () {
                     $(this.rootElement).find('iframe').attr('height', $(this.rootElement).closest('intro').height());
@@ -68,7 +74,7 @@ System.register(['angular2/core', './landing.videoPlayer.video.js', './services/
                     core_1.Component({
                         selector: 'videoplayer-side',
                         templateUrl: '/javascript/ka-coffee-port-what/views/landing.videoPlayer.view.html',
-                        directives: [landing_videoPlayer_video_1.VideoPlayerVideo]
+                        directives: [landing_videoPlayer_video_1.VideoPlayerVideo, analytics_directive_1.AnalyticsOn]
                     }),
                     __param(1, core_1.Inject(core_1.ElementRef)), 
                     __metadata('design:paramtypes', [logger_service_1.Logger, core_1.ElementRef])
