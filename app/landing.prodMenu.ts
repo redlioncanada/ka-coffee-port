@@ -21,7 +21,7 @@ export class ProductMenu extends TimelineController {
         new ProductModel(
             "./public/images/rl-coffee-btn-burr.jpg","MOULIN À CAFÉ À MEULES »",
             "",
-            "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3442/brand_small-appliances_coffee-products_burr-grinder.content.html?skipCache=true",
+            "http://www.kitchenaid.ca/fr_CA/2_1_2_3_3442/brand_small-appliances_coffee-products_burr-grinder.content.html?skipCache=true",
             "",
             "@language-What is Craft Coffee Landing Page",
             "@language-Clicked Main Craft Coffee Collection",
@@ -30,7 +30,7 @@ export class ProductMenu extends TimelineController {
         new ProductModel(
             "./public/images/rl-coffee-siphon.jpg","CAFETIÈRE À DÉCOMPRESSION »",
             "",
-            "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3450/brand_small-appliances_coffee-products_siphonbrew.content.html?skipCache=true",
+            "http://www.kitchenaid.ca/fr_CA/2_1_2_3_3450/brand_small-appliances_coffee-products_siphonbrew.content.html?skipCache=true",
             "",
             "@language-What is Craft Coffee Landing Page",
             "@language-Clicked Main Craft Coffee Collection",
@@ -39,7 +39,7 @@ export class ProductMenu extends TimelineController {
         new ProductModel(
             "./public/images/rl-coffee-btn-espresso.jpg","MACHINE À ESPRESSO »",
             "",
-            "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3445/brand_small-appliances_coffee-products_espresso-coffee.content.html",
+            "http://www.kitchenaid.ca/fr_CA/2_1_2_3_3445/brand_small-appliances_coffee-products_espresso-coffee.content.html",
             "",
             "@language-What is Craft Coffee Landing Page",
             "@language-Clicked Main Craft Coffee Collection",
@@ -57,7 +57,7 @@ export class ProductMenu extends TimelineController {
         new ProductModel(
             "./public/images/rl-coffee-btn-PO.jpg","INFUSEUR DE CAFÉ À FILTRE PERSONNALISÉ »",
             "",
-            "http://cuat.kitchenaid.ca/fr_CA/2_1_2_3_3447/brand_small-appliances_coffee-products_pour-over-coffee.content.html?skipCache=true",
+            "http://www.kitchenaid.ca/fr_CA/2_1_2_3_3447/brand_small-appliances_coffee-products_pour-over-coffee.content.html?skipCache=true",
             "",
             "@language-What is Craft Coffee Landing Page",
             "@language-Clicked Main Craft Coffee Collection",
