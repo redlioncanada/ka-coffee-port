@@ -47,7 +47,7 @@ export class ProductMenu extends TimelineController {
                 "./public/images/rl-coffee-btn-french.jpg",
                 "Precision Press »",
                 "",
-                "",
+                "http://www.kitchenaid.ca/en_CA/2_1_2_3_3448/brand_small-appliances_coffee-products_precision-press.content.html",
                 "",
                 "@language-Craft Coffee Landing Page",
                 "@language-Clicked Main Craft Coffee Collection",

@@ -1,4 +1,4 @@
-System.register(['angular2/core', './landing.timeline-controller.js', './landing.floatButton.js', './models/products.model.js'], function(exports_1, context_1) {
+System.register(['angular2/core', './landing.timeline-controller.js', './landing.floatButton.js', './models/products.model.js', './analytics.directive.js'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __extends = (this && this.__extends) || function (d, b) {
@@ -18,7 +18,7 @@ System.register(['angular2/core', './landing.timeline-controller.js', './landing
     var __param = (this && this.__param) || function (paramIndex, decorator) {
         return function (target, key) { decorator(target, key, paramIndex); }
     };
-    var core_1, landing_timeline_controller_1, landing_floatButton_1, products_model_1;
+    var core_1, landing_timeline_controller_1, landing_floatButton_1, products_model_1, analytics_directive_1;
     var FloatMenu;
     return {
         setters:[
@@ -33,6 +33,9 @@ System.register(['angular2/core', './landing.timeline-controller.js', './landing
             },
             function (products_model_1_1) {
                 products_model_1 = products_model_1_1;
+            },
+            function (analytics_directive_1_1) {
+                analytics_directive_1 = analytics_directive_1_1;
             }],
         execute: function() {
             FloatMenu = (function (_super) {
@@ -40,8 +43,8 @@ System.register(['angular2/core', './landing.timeline-controller.js', './landing
                 function FloatMenu(elementRef) {
                     _super.call(this);
                     this.features = [
-                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-what-button.png", "What is craft coffee?", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_22847/brand_small-appliances_coffee-products_test-what-is-craft-coffee.content.html?skipCache=true", ""),
-                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-brewer-button.png", "KITCHENAID® CRAFT BREWERS", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3449/brand_small-appliances_coffee-products_product-information.content.html?skipCache=true", "")
+                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-what-button.png", "What is craft coffee?", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_22847/brand_small-appliances_coffee-products_test-what-is-craft-coffee.content.html?skipCache=true", "", "@language-Craft Coffee Landing Page", "@language-Clicked Learn More CTA's", "What is Craft Coffee"),
+                        new products_model_1.ProductModel("/images/ka-coffee-port/rl-coffee-brewer-button.png", "KITCHENAID® CRAFT BREWERS", "", "http://www.kitchenaid.ca/en_CA/2_1_2_3_3449/brand_small-appliances_coffee-products_product-information.content.html?skipCache=true", "", "@language-Craft Coffee Landing Page", "@language-Clicked Learn More CTA's", "KA-Craft Brewers")
                     ];
                     this.elementRef = elementRef;
                     this.rootElement = $(this.elementRef.nativeElement);
@@ -62,7 +65,7 @@ System.register(['angular2/core', './landing.timeline-controller.js', './landing
                     core_1.Component({
                         selector: 'float-menu',
                         templateUrl: '/javascript/ka-coffee-port/views/masthead.floatNav.view.html',
-                        directives: [landing_floatButton_1.FloatButton]
+                        directives: [landing_floatButton_1.FloatButton, analytics_directive_1.AnalyticsOn]
                     }),
                     __param(0, core_1.Inject(core_1.ElementRef)), 
                     __metadata('design:paramtypes', [core_1.ElementRef])
